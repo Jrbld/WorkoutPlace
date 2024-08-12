@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <title>{% block title %}Workout Place{% endblock %}</title>
-        <link rel="icon" href="{{ asset('build/images/WP-light-logo.png') }}">
+        <link rel="icon" href="{{ asset('build/images/WP-dark-logo.png') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -20,11 +20,117 @@
 
     <body>
 
+        {# NAVBAR #}
+        <nav class="navbar">
+            <div id="navbar-logo">
+                <a href="{{ url('home') }}">
+                    <img src="{{ asset('build/images/WP-light-logo.png') }}" alt="Logo Workout Place">
+                </a>
+            </div>
 
+            <div class="menu">
+                <a href="{{ url('home') }}">Accueil</a>
+                <a href="#">Abonnements</a>
+                <a href="#">Espaces</a>
+                <a href="#">Cours</a>
+                <a href="#">Actualités</a>
+                <a href="#">Contact</a>
+                <a href="#">Connexion</a>
+            </div>
+
+            <button class="burger">
+                <div class="bar"></div>
+            </button>
+
+            <div class="mobile-nav">
+                <a href="{{ url('home') }}">ACCUEIL</a>
+                <a href="#">ABONNEMENTS</a>
+                <a href="#">ESPACES</a>
+                <a href="#">COURS</a>
+                <a href="#">ACTUALITÉS</a>
+                <a href="#">CONTACT</a>
+                <a href="#">CONNEXION</a>
+            </div>
+        </nav>
 
         {% block body %}{% endblock %}
 
+        <footer>
+            <div class="footer-links">
+                <a href="#">Abonnements</a>
+                <span></span>
+                <a href="#">Contact</a>
+                <span></span>
+                <a href="#">Nous trouver</a>
+            </div>
 
+            <div class="footer-icon">
+                <div class="social-media">
+                    <a href="#"><img id="instagram" src="{{ asset('build/images/instagram.png') }}" alt="Instagram" onmouseover="mouseOverInstagram(this)"; onmouseout="mouseOutInstagram(this)";></a>
+                    <a href="#"><img id="facebook" src="{{ asset('build/images/facebook.png') }}" alt="Facebook" onmouseover="mouseOverFacebook(this)"; onmouseout="mouseOutFacebook(this)";></a>
+                    <a href="#"><img id="youtube" src="{{ asset('build/images/youtube.png') }}" alt="YouTube" onmouseover="mouseOverYoutube(this)"; onmouseout="mouseOutYoutube(this)";></a>
+                    <a href="#"><img id="tiktok" src="{{ asset('build/images/tiktok.png') }}" alt="TikTok" onmouseover="mouseOverTiktok(this)"; onmouseout="mouseOutTiktok(this)";></a>
+                    <a href="#"><img id="spotify" src="{{ asset('build/images/spotify.png') }}" alt="Spotify" onmouseover="mouseOverSpotify(this)"; onmouseout="mouseOutSpotify(this)";></a>
+                </div>
+                <a id="wp-footer-logo" href="{{ url('home') }}"><img src="{{ asset('build/images/WP-light-complete-logo.png') }}" alt="Logo Workout Place"></a>
+            </div>
+        </footer>
+
+        {# SCRIPT JS #}
+        <script>
+
+            /* Changement d'image au survol des icônes de réseaux sociaux */
+            function mouseOverInstagram(instagram){
+                instagram.setAttribute('src', '../../build/images/instagram-hover.png');
+            }
+            function mouseOutInstagram(instagram){
+                instagram.setAttribute('src', '../../build/images/instagram.png');
+            }
+
+            function mouseOverFacebook(facebook){
+                facebook.setAttribute('src', '../../build/images/facebook-hover.png');
+            }
+            function mouseOutFacebook(facebook){
+                facebook.setAttribute('src', '../../build/images/facebook.png');
+            }
+
+            function mouseOverYoutube(youtube){
+                youtube.setAttribute('src', '../../build/images/youtube-hover.png');
+            }
+            function mouseOutYoutube(youtube){
+                youtube.setAttribute('src', '../../build/images/youtube.png');
+            }
+
+            function mouseOverTiktok(tiktok){
+                tiktok.setAttribute('src', '../../build/images/tiktok-hover.png');
+            }
+            function mouseOutTiktok(tiktok){
+                tiktok.setAttribute('src', '../../build/images/tiktok.png');
+                
+            }
+
+            function mouseOverSpotify(spotify){
+                spotify.setAttribute('src', '../../build/images/spotify-hover.png');
+            }
+            function mouseOutSpotify(spotify){
+                spotify.setAttribute('src', '../../build/images/spotify.png');
+                
+            }
+            /* -------------------------------------------------------- */
+
+            /* TOGGLE MENU */
+            window.onload = function() {
+                const menu_btn = document.querySelector('.burger');
+                const mobile_menu = document.querySelector('.mobile-nav');
+
+                menu_btn.addEventListener('click', function() {
+                    menu_btn.classList.toggle('is-active');
+                    mobile_menu.classList.toggle('is-active');
+                });
+            }
+            /* -------------------------------------------------------- */
+
+        </script>
 
     </body>
 </html>
