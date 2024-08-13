@@ -253,3 +253,216 @@ header {
     }
 }
 /* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* SECTION "COACH" */
+/* ---------------------------------------- */
+.coach {
+    width: 100%;
+    background-color: #212121;
+}
+
+#coach-button:hover {
+    background-color: white;
+    color: #D95D37;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* MEDIA SCREEN "COACH" */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .coach {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .coach h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    #coach-presentation {
+        text-align: center;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    #coach-photo {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    #pilates, #body, #hiit {
+        width: 100%;
+    }
+
+    #pilates h2, #body h2, #hiit h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+    }
+
+    #pilates span, #body span, #hiit span {
+        border: 1px solid white;
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #pilates p, #body p, #hiit p {
+        margin-bottom: 30px;
+    }
+
+    #coach-button {
+        text-decoration: none;
+        background-color: #D95D37;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+    }
+
+    #coach-button:active {
+        background-color: white;
+        color: #D95D37;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* SECTION "NEWS" */
+/* ---------------------------------------- */
+.news {
+    width: 100%;
+}
+
+#news-card-1:hover, #news-card-2:hover, #news-card-3:hover {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+#news-button:hover {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* MEDIA SCREEN "NEWS" */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .news {
+        padding: 30px;
+    }
+    
+    .news h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #news-presentation {
+        text-align: center;
+        margin-bottom: 30px;
+        color: black;
+    }
+
+    .news-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .news-cards a {
+        text-decoration: none;
+    }
+
+    .news-cards a:active {
+        opacity: 0.8;
+    }
+
+    #news-card-1, #news-card-2, #news-card-3 {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+
+    #news-card-1:active, #news-card-2:active, #news-card-3:active {
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    #news-card-1 a, #news-card-2 a, #news-card-3 a {
+        width: 100%;
+        height: 100%;
+        font-family: 'Oswald', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+        display: block;
+        color: white;
+    }
+
+    #news-button {
+        text-decoration: none;
+        background-color: #D95D37;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+    }
+
+    #news-button:active {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
