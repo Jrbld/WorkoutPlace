@@ -12,13 +12,75 @@
 
 {% block body %}
 
-<header style="background-image: url('{{ asset('build/images/home-header.jpg') }}');">
-    <img src="{{ asset('build/images/WP-light-complete-logo.png') }}" alt="Logo Workout Place">
-</header>
+<header style="background-image: url('{{ asset('build/images/home-header.jpg') }}');"></header>
 
 <section class="choose">
     <h1>POURQUOI NOUS CHOISIR ?</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis laboriosam aliquam repellendus quos, dolorum accusantium, alias dolorem at repellat natus mollitia officiis, autem esse fuga similique quaerat exercitationem consequatur dicta!</p>
+    <p id="choose-presentation">
+        WORKOUT PLACE est une toute nouvelle salle de sport, proposant de nombreux services à tous ses pratiquants.<br>
+        Tout est pensé pour vous donner envie de vous entraîner et de vous surpasser !
+    </p>
+
+    <div class="choose-cards">
+        <div id="choose-card-1">
+            <div id="title-1">
+                <img src="{{ asset('build/images/clock.png') }}" alt="Clock icon">
+                <h2>OUVERT 24H/24 - 7J/7</h2>
+            </div>
+            <p>
+                Venez vous entraîner à l'heure<br>
+                que vous souhaitez !<br>
+                L'accueil est ouvert tous les jours<br>
+                de 8h à 12h et de 14h à 18h.
+            </p>
+        </div>
+        <div id="choose-card-2">
+            <div id="title-2">
+                <img src="{{ asset('build/images/dumbbell.png') }}" alt="Dumbbell icon">
+                <h2>MATÉRIEL DERNIER CRI</h2>
+            </div>
+            <p>
+                Toutes nos machines sont les plus récentes,<br>
+                elles ont été choisies et testées<br>
+                pour vous permettre de progresser.<br>
+                N'hésitez pas à toutes les essayer !
+            </p>
+        </div>
+        <div id="choose-card-3">
+            <div id="title-3">
+                <img src="{{ asset('build/images/gym.png') }}" alt="Gym icon">
+                <h2>SALLE DE 10 000 M²</h2>
+            </div>
+            <p>
+                Bienvenue dans la plus grande<br>
+                salle de sport de France !<br>
+                Vous trouverez tout ce dont vous avez besoin,<br>
+                pour les exercices que vous voulez !
+            </p>
+        </div>
+        <a id="subscribe-button" href="#">S'INSCRIRE</a>
+    </div>
+</section>
+
+<section class="spaces">
+    <h1>DES ESPACES POUR TOUS</h1>
+    <p>
+        WORKOUT PLACE est une toute nouvelle salle de sport, proposant de nombreux services à tous ses pratiquants.<br>
+        Tout est pensé pour vous donner envie de vous entraîner et de vous surpasser !
+    </p>
+
+    <div class="spaces-cards">
+            <div id="space-card-1" style="background-image: url('{{ asset('build/images/fitness.jpg') }}');">
+                <a href="#">FITNESS</a>
+            </div>
+            <div id="space-card-2" style="background-image: url('{{ asset('build/images/crossfit.jpg') }}');">
+                <a href="#">CROSSFIT</a>
+            </div>
+            <div id="space-card-3" style="background-image: url('{{ asset('build/images/sauna.jpg') }}');">
+                <a href="#">SAUNA</a>
+            </div>
+        <a id="spaces-button" href="#">TOUS NOS ESPACES</a>
+    </div>
 </section>
 
 {% endblock %}
