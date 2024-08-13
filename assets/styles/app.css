@@ -105,15 +105,16 @@ body {
         top: 100px;
         left: 100%;
         width: 100%;
-        height: 100%;
+        height: auto;
         background-color: #D95D37;
         transition: 0.4s;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
     }
     
     .mobile-nav.is-active {
         left: 0;
     }
-    
+
     .mobile-nav a {
         display: block;
         text-align: center;
@@ -200,4 +201,17 @@ footer {
     height: 30px;
     width: auto;
     margin-left: 30px;
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
+/* MEDIA SCREEN FOOTER */
+/* -------------------------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .footer-links a:active{
+        color: #D95D37;
+    }
 }

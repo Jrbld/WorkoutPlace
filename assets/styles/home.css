@@ -12,17 +12,12 @@
 /* ---------------------------------------- */
 header {
     width: 100%;
-    height: 250px;
     margin-top: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
-header img {
-    width: 280px;
-    height: auto;
-}
+/* ---------------------------------------- */
 
 
 
@@ -31,8 +26,8 @@ header img {
 /* MEDIA SCREEN HEADER */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
-    header img {
-        margin: 90px 0 0 18%;
+    header {
+        height: 250px;
     }
 }
 /* ---------------------------------------- */
@@ -45,7 +40,12 @@ header img {
 /* ---------------------------------------- */
 .choose {
     width: 100%;
-    padding: 30px;
+}
+
+#subscribe-button:hover {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
 }
 /* ---------------------------------------- */
 
@@ -56,13 +56,200 @@ header img {
 /* MEDIA SCREEN "CHOOSE" */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
-    h1 {
+    .choose {
+        padding: 30px;
+    }
+    
+    .choose h1 {
         font-family: 'Oswald', sans-serif;
         font-size: 32px;
         font-weight: bold;
         font-style: italic;
         text-align: center;
         margin-bottom: 30px;
+    }
+
+    #choose-presentation {
+        text-align: center;
+        margin-bottom: 30px;
+        color: black;
+    }
+
+    .choose-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #choose-card-1, #choose-card-2, #choose-card-3 {
+        width: 100%;
+        height: auto;
+        background-color: #212121;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        padding: 30px;
+    }
+
+    #choose-card-1 p, #choose-card-2 p, #choose-card-3 p {
+        color: white;
+        text-align: center;
+    }
+
+    #title-1, #title-2, #title-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        color: white;
+    }
+
+    #title-1 img, #title-2 img, #title-3 img {
+        width: 40px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    #title-1 h2, #title-2 h2, #title-3 h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    #subscribe-button {
+        text-decoration: none;
+        background-color: #D95D37;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+    }
+
+    #subscribe-button:active {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* SECTION "SPACES" */
+/* ---------------------------------------- */
+.spaces {
+    width: 100%;
+    background-color: #D95D37;
+}
+
+.spaces h1, p {
+    color: white;
+}
+
+#space-card-1:hover, #space-card-2:hover, #space-card-3:hover {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+#spaces-button:hover {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* MEDIA SCREEN "SPACES" */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .spaces {
+        padding: 30px;
+    }
+
+    .spaces h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .spaces p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .spaces-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .spaces-cards a {
+        text-decoration: none;
+    }
+
+    .spaces-cards a:active {
+        opacity: 0.8;
+    }
+
+    #space-card-1, #space-card-2, #space-card-3 {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+
+    #space-card-1:active, #space-card-2:active, #space-card-3:active {
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    #space-card-1 a, #space-card-2 a, #space-card-3 a {
+        width: 100%;
+        height: 100%;
+        font-family: 'Oswald', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+        display: block;
+        color: white;
+    }
+
+    #spaces-button {
+        text-decoration: none;
+        background-color: white;
+        color: #D95D37;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+    }
+
+    #spaces-button:active {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
     }
 }
 /* ---------------------------------------- */
