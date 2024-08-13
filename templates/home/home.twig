@@ -65,8 +65,9 @@
 <section class="spaces">
     <h1>DES ESPACES POUR TOUS</h1>
     <p>
-        WORKOUT PLACE est une toute nouvelle salle de sport, proposant de nombreux services à tous ses pratiquants.<br>
-        Tout est pensé pour vous donner envie de vous entraîner et de vous surpasser !
+        Notre salle comporte de nombreux espaces adaptés<br>
+        à tous vos besoins et à tous les sports<br>
+        que vous souhaitez pratiquer.
     </p>
 
     <div class="spaces-cards">
@@ -81,6 +82,71 @@
             </div>
         <a id="spaces-button" href="#">TOUS NOS ESPACES</a>
     </div>
+</section>
+
+<section class="coach">
+    <h1>DES COACHS DIPLOMÉS</h1>
+    <p id="coach-presentation">
+        Notre équipe est composée de 6 coachs diplomés<br>
+        et spécialisés dans différents domaines.<br>
+        Ils seront toujours à votre écoute<br>
+        et vous dispenseront de nombreux cours !
+    </p>
+
+    <div id="coach-photo" style="background-image: url('{{ asset('build/images/team.jpg') }}');"></div>
+
+    <div id="pilates">
+        <h2>PILATES</h2>
+        <span></span>
+        <p>
+            Le Pilates est une méthode d'entraînement qui allie<br>
+            renforcement musculaire, alignement postural et respiration contrôlée, et qui s'adresse à tous.<br>
+        </p>
+    </div>
+
+    <div id="body">
+        <h2>BODY ATTACK</h2>
+        <span></span>
+        <p>
+            Le Body Attack est un programme de fitness énergique<br>
+            qui combine des mouvements athlétiques, tels que la course et les sauts, avec des exercices de renforcement.
+        </p>
+    </div>
+
+    <div id="hiit">
+        <h2>HIIT STEP</h2>
+        <span></span>
+        <p>
+            Le HIITSTEP est un entraînement en intervalles<br>
+            de haute intensité qui utilise une plateforme d'escalier<br>
+            pour des exercices dynamiques.
+        </p>
+    </div>
+
+    <a id="coach-button" href="#">NOS DIFFÉRENTS COURS</a>
+</section>
+
+<section class="news">
+    <h1>SUIVEZ NOS ACTUALITÉS !</h1>
+    <p id="news-presentation">
+        Sur notre site, vous trouverez de nombreux contenus<br>
+        que nous vous avons préparés pour mieux<br>
+        aborder votre quotidien à travers,<br>
+        par exemple, vos entraînements et vos repas.
+    </p>
+
+    <div class="news-cards">
+        <div id="news-card-1" style="background-image: url('{{ asset('build/images/workout.jpg') }}');">
+            <a href="#">PROGRAMME FULL BODY</a>
+        </div>
+        <div id="news-card-2" style="background-image: url('{{ asset('build/images/playlist.jpg') }}');">
+            <a href="#">PLAYLIST DE LA SEMAINE</a>
+        </div>
+        <div id="news-card-3" style="background-image: url('{{ asset('build/images/poke.jpg') }}');">
+            <a href="#">LE POKÉ HYPER PROTÉINÉ</a>
+        </div>
+    <a id="news-button" href="#">LES DERNIÈRES NOUVEAUTÉS</a>
+</div>
 </section>
 
 {% endblock %}
