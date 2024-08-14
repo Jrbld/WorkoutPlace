@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('space') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('space') }}
+{% endblock %}
+
+{% block title %}
+
+{% if slug == 'musculation' %}
+Workout Place | Musculation
+{% endif %}
+
+{% if slug == 'cardio-abdos' %}
+Workout Place | Cardio-Abdos
+{% endif %}
+
+{% if slug == 'crossfit' %}
+Workout Place | Crossfit
+{% endif %}
+
+{% if slug == 'boxe' %}
+Workout Place | Boxe
+{% endif %}
+
+{% if slug == 'sauna' %}
+Workout Place | Sauna
+{% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+
+{% endblock %}

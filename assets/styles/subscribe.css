@@ -1,1 +1,285 @@
 @import url('app.css');
+
+/* ---------------------------------------- */
+/* SECTION ABONNEMENTS */
+/* ---------------------------------------- */
+.subscriptions {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.subscription-button:hover {
+    background-color: white;
+    color: #D95D37;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" ABONNEMENTS */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .subscriptions {
+        padding: 30px;
+    }
+
+    .subscriptions h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #subscription-1, #subscription-2, #subscription-3 {
+        width: 100%;
+        height: auto;
+        background-color: #212121;
+        padding: 30px;
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #subscription-1, #subscription-2 {
+        margin-bottom: 30px;
+    }
+
+    #subscription-1 h2, #subscription-2 h2, #subscription-3 h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #subscription-1 p, #subscription-2 p, #subscription-3 p {
+        color: white;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .white-title {
+        color: white;
+    }
+
+    .orange-title {
+        color: #D95D37;
+    }
+
+    .subscription-button {
+        text-decoration: none;
+        background-color: #D95D37;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+    }
+
+    .subscription-button:active {
+        background-color: white;
+        color: #D95D37;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* SECTION OFFRES */
+/* ---------------------------------------- */
+.offers {
+    width: 100%;
+    background-color: #212121;
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" OFFRES */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .offers {
+        padding: 30px;
+    }
+
+    .offers h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    #offers-presentation {
+        color: white;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #family {
+        margin-bottom: 30px;
+    }
+
+    #family h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+        color: white;
+    }
+
+    .horizontale-line {
+        border: 1px solid white;
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #family-presentation {
+        color: white;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .family-offers {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+    }
+
+    .family-white-p {
+        color: white;
+    }
+
+    .family-orange-p {
+        color: #D95D37;
+    }
+
+    #family-justify {
+        color: white;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    #student h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: right;
+        color: white;
+    }
+
+    .horizontale-line {
+        border: 1px solid white;
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #student-presentation {
+        color: white;
+        text-align: right;
+        margin-bottom: 15px;
+    }
+
+    .student-offers {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: right;
+    }
+
+    .student-white-p {
+        color: white;
+    }
+
+    .student-orange-p {
+        color: #D95D37;
+    }
+
+    #student-justify {
+        color: white;
+        text-align: right;
+        margin-top: 15px;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" ESSAI */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .try {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #try-text {
+        text-align: center;
+        color: white;
+        padding-top: 95px;
+    }
+
+    #try-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" LÉGENDE */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .legend {
+        width: 100%;
+        height: auto;
+        background-color: #D95D37;
+    }
+
+    .legend h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 30px;
+        color: white;
+    }
+}
+/* ---------------------------------------- */

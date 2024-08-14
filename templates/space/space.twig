@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('space') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('space') }}
+{% endblock %}
+
+{% block title %}Workout Place | Espaces{% endblock %}
+
+{% block body %}
+
+<section class="space-title">
+    <h1>
+        DÉCOUVREZ TOUS<br>
+        NOS ESPACES
+    </h1>
+</section>
+
+<section class="spaces">
+    <div class="space" style="background-image: url('{{ asset('build/images/fitness-header.jpg') }}');">
+        <div class="space-text">
+            <a href="{{ path('space.show', {slug: 'musculation'}) }}">
+                <p>MUSCULATION</p>
+                <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            </a>
+        </div>
+    </div>
+    <div class="orange-line"></div>
+    <div class="space" style="background-image: url('{{ asset('build/images/cardio-header.jpg') }}');">
+        <div class="space-text">
+            <a href="{{ path('space.show', {slug: 'cardio-abdos'}) }}">
+                <p>CARDIO/ABDOS</p>
+                <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            </a>
+        </div>
+    </div>
+    <div class="orange-line"></div>
+    <div class="space" style="background-image: url('{{ asset('build/images/crossfit-header.jpg') }}');">
+        <div class="space-text">
+            <a href="{{ path('space.show', {slug: 'crossfit'}) }}">
+                <p>CROSSFIT</p>
+                <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            </a>
+        </div>
+    </div>
+    <div class="orange-line"></div>
+    <div class="space" style="background-image: url('{{ asset('build/images/boxe-header.jpg') }}');">
+        <div class="space-text">
+            <a href="{{ path('space.show', {slug: 'boxe'}) }}">
+                <p>BOXE</p>
+                <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            </a>
+        </div>
+    </div>
+    <div class="orange-line"></div>
+    <div class="space" style="background-image: url('{{ asset('build/images/sauna-header.jpg') }}');">
+        <div class="space-text">
+            <a href="{{ path('space.show', {slug: 'sauna'}) }}">
+                <p>SAUNA</p>
+                <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

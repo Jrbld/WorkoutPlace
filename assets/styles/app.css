@@ -49,7 +49,7 @@ body {
 
 
 /* -------------------------------------------------------- */
-/* MEDIA SCREEN NAVBAR */
+/* "MOBILE" NAVBAR */
 /* -------------------------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
 
@@ -154,8 +154,6 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    padding: 30px;
 }
 
 .footer-links {
@@ -174,44 +172,48 @@ footer {
     color: #D95D37;
 }
 
-.footer-links span {
-    border: 1px solid white;
-    display: inline-block;
-    height: 30px;
-    margin: 0 30px;
-}
-
 .footer-icon {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-
-.footer-icon .social-media a img {
-    width: 30px;
-    height: auto;
-}
-
-.footer-icon .social-media a img {
-    margin: 0 3px;
-}
-
-.footer-icon #wp-footer-logo img {
-    height: 30px;
-    width: auto;
-    margin-left: 30px;
-}
 /* -------------------------------------------------------- */
 
 
 
 
 /* -------------------------------------------------------- */
-/* MEDIA SCREEN FOOTER */
+/* "MOBILE" FOOTER */
 /* -------------------------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
+    footer {
+        padding: 30px;
+    }
+    
     .footer-links a:active{
         color: #D95D37;
+    }
+
+    .footer-icon .social-media a img {
+        width: 30px;
+        height: auto;
+    }
+    
+    .footer-icon .social-media a img {
+        margin: 0 3px;
+    }
+    
+    .footer-icon #wp-footer-logo img {
+        height: 30px;
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .footer-links span {
+        border: 1px solid white;
+        display: inline-block;
+        height: 30px;
+        margin: 0 30px;
     }
 }

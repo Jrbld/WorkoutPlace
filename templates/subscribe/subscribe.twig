@@ -1,0 +1,106 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('subscribe') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('subscribe') }}
+{% endblock %}
+
+{% block title %}Workout Place | Abonnements{% endblock %}
+
+{% block body %}
+
+<section class="subscriptions">
+    <h1>NOS ABONNEMENTS *</h1>
+
+    <div class="subscriptions-cards">
+        <div id="subscription-1">
+            <h2><span class="white-title">CLASSIC</span> <span class="orange-title">25€/MOIS</span></h2>
+            <p>
+                Accès illimité au club<br><br>
+                Accès à tous les cours (sauf Premium)<br><br>
+                1 séance de Sauna/semaine<br><br>
+                Fontaine à boissons énergisantes gratuite
+            </p>
+            <a class="subscription-button" href="#">LET'S GO</a>
+        </div>
+        <div id="subscription-2">
+            <h2><span class="white-title">MAX</span> <span class="orange-title">35€/MOIS</span></h2>
+            <p>
+                Tous les avantages de l'abonnement CLASSIC<br><br>
+                +<br><br>
+                Accès aux cours Premium<br><br>
+                Accès illimité au Sauna
+            </p>
+            <a class="subscription-button" href="#">LET'S GO</a>
+        </div>
+        <div id="subscription-3">
+            <h2><span class="white-title">ULTRA</span> <span class="orange-title">45€/MOIS</span></h2>
+            <p>
+                Tous les avantages de l'abonnement MAX<br><br>
+                +<br><br>
+                10 séances avec un coach personnel<br><br>
+                Un équipement complet d'entraînement offert
+            </p>
+            <a class="subscription-button" href="#">LET'S GO</a>
+        </div>
+    </div>
+</section>
+
+<section class="offers">
+    <h1>NOS OFFRES SPÉCIALES *</h1>
+    <p id="offers-presentation">
+        Les inscriptions pour ces offres se font<br>
+        essentiellement à l'accueil du club.
+    </p>
+
+    <div id="family">
+        <h2>LE DUO FAMILIAL</h2>
+        <span class="horizontale-line"></span>
+        <p id="family-presentation">
+            Formez votre meilleur duo et<br>
+            venez vous entraîner en famille !
+        </p>
+        <p class="family-offers"><span class="family-white-p">CLASSIC</span>&ensp;<span class="family-orange-p">40€/MOIS</span></p>
+        <p class="family-offers"><span class="family-white-p">MAX</span>&ensp;<span class="family-orange-p">60€/MOIS</span></p>
+        <p class="family-offers"><span class="family-white-p">ULTRA</span>&ensp;<span class="family-orange-p">80€/MOIS</span></p>
+        <p id="family-justify">
+            Un document justifiant votre lien de parenté<br>
+            vous sera demandé.
+        </p>
+    </div>
+
+    <div id="student">
+        <h2>L'OFFRE ÉTUDIANTE</h2>
+        <span class="horizontale-line"></span>
+        <p id="student-presentation">
+            Pour tous les étudiant(e)s de moins de 25 ans !
+        </p>
+        <p class="student-offers"><span class="student-white-p">CLASSIC</span>&ensp;<span class="student-orange-p">15€/MOIS</span></p>
+        <p class="student-offers"><span class="student-white-p">MAX</span>&ensp;<span class="student-orange-p">25€/MOIS</span></p>
+        <p class="student-offers"><span class="student-white-p">ULTRA</span>&ensp;<span class="student-orange-p">35€/MOIS</span></p>
+        <p id="student-justify">
+            Un document justifiant votre statut d'étudiant<br>
+            vous sera demandé.
+        </p>
+    </div>
+</section>
+
+<section class="try" style="background-image: url('{{ asset('build/images/try.jpg') }}');">
+    <p id="try-text">
+        <span id="try-title">SÉANCE D'ESSAI OFFERTE</span><br>
+        <span id="try-legend">(Renseignements à l'accueil du club)</span>
+    </p>
+</section>
+
+<section class="legend">
+    <h2>
+        * TOUS NOS ABONNEMENTS ET<br>
+        OFFRES SPÉCIALES ONT UNE<br>
+        DURÉE D'ENGAGEMENT DE 12 MOIS.
+    </h2>
+</section>
+
+{% endblock %}
