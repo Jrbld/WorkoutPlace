@@ -58,7 +58,7 @@
                 pour les exercices que vous voulez !
             </p>
         </div>
-        <a id="subscribe-button" href="#">S'INSCRIRE</a>
+        <a id="subscribe-button" href="{{ url('subscribe') }}">S'INSCRIRE</a>
     </div>
 </section>
 
@@ -72,15 +72,15 @@
 
     <div class="spaces-cards">
             <div id="space-card-1" style="background-image: url('{{ asset('build/images/fitness.jpg') }}');">
-                <a href="#">FITNESS</a>
+                <a href="{{ path('space.show', {slug: 'musculation'}) }}">MUSCULATION</a>
             </div>
             <div id="space-card-2" style="background-image: url('{{ asset('build/images/crossfit.jpg') }}');">
-                <a href="#">CROSSFIT</a>
+                <a href="{{ path('space.show', {slug: 'crossfit'}) }}">CROSSFIT</a>
             </div>
             <div id="space-card-3" style="background-image: url('{{ asset('build/images/sauna.jpg') }}');">
-                <a href="#">SAUNA</a>
+                <a href="{{ path('space.show', {slug: 'sauna'}) }}">SAUNA/DÉTENTE</a>
             </div>
-        <a id="spaces-button" href="#">TOUS NOS ESPACES</a>
+        <a id="spaces-button" href="{{ url('space') }}">TOUS NOS ESPACES</a>
     </div>
 </section>
 
@@ -123,7 +123,7 @@
         </p>
     </div>
 
-    <a id="coach-button" href="#">NOS DIFFÉRENTS COURS</a>
+    <a id="coach-button" href="{{ url('lesson') }}">NOS DIFFÉRENTS COURS</a>
 </section>
 
 <section class="news">
@@ -145,7 +145,7 @@
         <div id="news-card-3" style="background-image: url('{{ asset('build/images/poke.jpg') }}');">
             <a href="#">LE POKÉ HYPER PROTÉINÉ</a>
         </div>
-    <a id="news-button" href="#">LES DERNIÈRES NOUVEAUTÉS</a>
+    <a id="news-button" href="{{ url('news') }}">LES DERNIÈRES NOUVEAUTÉS</a>
 </div>
 </section>
 

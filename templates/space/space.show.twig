@@ -34,5 +34,324 @@ Workout Place | Sauna
 
 {% block body %}
 
+{% if slug == 'musculation' %}
+
+    <header style="background-image:url('{{ asset('build/images/fitness-header.jpg') }}')">
+        <div class="header-title">
+            <p>MUSCULATION</p>
+            <img src="{{ asset('build/images/fitness-icon.png') }}" alt="Logo Musculation">
+        </div>
+    </header>
+
+    <section class="space-content">
+        <p>
+            La musculation consiste à effectuer des exercices<br>
+            pour développer la taille et la force des muscles.<br>
+            C'est une activité qui demande du temps et<br>
+            de l'effort pour obtenir des résultats.
+        </p>
+        <img src="{{ asset('build/images/fitness-1.jpg') }}" alt="Image 1 musculation">
+        <p>
+            Vous pouvez effectuer des programmes full-body,<br>
+            qui permettent de travailler toutes les zones musculaires<br>
+            et de gagner rapidement en volume et en force,<br>
+            mais également faire une séance par muscle isolé.
+        </p>
+        <img src="{{ asset('build/images/fitness-2.jpg') }}" alt="Image 2 musculation">
+        <p>
+            La musculation ne se limite pas à l'entraînement.<br>
+            La nutrition joue un rôle essentiel.<br>
+            Vos coachs sont disponibles pour vous écouter<br>
+            et vous donner tous les conseils nécessaires.
+        </p>
+        <img src="{{ asset('build/images/fitness-3.jpg') }}" alt="Image 3 musculation">
+        <p>
+            Dans notre espace "Musculation", vous pourrez<br>
+            trouver toutes les machines les plus récentes.<br>
+            Elles vous permettront de travailler et de progresser<br>
+            dans les meilleures conditions.
+        </p>
+    </section>
+
+    <section class="space-links">
+        <a href="{{ path('space.show', {slug: 'cardio-abdos'}) }}">
+            CARDIO/ABDOS
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'crossfit'}) }}">
+            CROSSFIT
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'boxe'}) }}">
+            BOXE
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'sauna'}) }}">
+            SAUNA/DÉTENTE
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ url('space') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            LISTE DES ESPACES
+        </a>
+    </section>
+
+{% endif %}
+
+{% if slug == 'cardio-abdos' %}
+
+    <header style="background-image:url('{{ asset('build/images/cardio-header.jpg') }}')">
+        <div class="header-title">
+            <p>CARDIO/ABDOS</p>
+            <img src="{{ asset('build/images/cardio-icon.png') }}" alt="Logo Cardio">
+        </div>
+    </header>
+
+    <section class="space-content">
+        <p>
+            La musculation consiste à effectuer des exercices<br>
+            pour développer la taille et la force des muscles.<br>
+            C'est une activité qui demande du temps et<br>
+            de l'effort pour obtenir des résultats.
+        </p>
+        <img src="{{ asset('build/images/cardio-1.jpg') }}" alt="Image 1 cardio">
+        <p>
+            Vous pouvez effectuer des programmes full-body,<br>
+            qui permettent de travailler toutes les zones musculaires<br>
+            et de gagner rapidement en volume et en force,<br>
+            mais également faire une séance par muscle isolé.
+        </p>
+        <img src="{{ asset('build/images/cardio-2.jpg') }}" alt="Image 2 cardio">
+        <p>
+            La musculation ne se limite pas à l'entraînement.<br>
+            La nutrition joue un rôle essentiel.<br>
+            Vos coachs sont disponibles pour vous écouter<br>
+            et vous donner tous les conseils nécessaires.
+        </p>
+        <img src="{{ asset('build/images/cardio-3.jpg') }}" alt="Image 3 cardio">
+        <p>
+            Dans notre espace "Musculation", vous pourrez<br>
+            trouver toutes les machines les plus récentes.<br>
+            Elles vous permettront de travailler et de progresser<br>
+            dans les meilleures conditions.
+        </p>
+    </section>
+
+    <section class="space-links">
+        <a href="{{ path('space.show', {slug: 'musculation'}) }}">
+            MUSCULATION
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'crossfit'}) }}">
+            CROSSFIT
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'boxe'}) }}">
+            BOXE
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'sauna'}) }}">
+            SAUNA/DÉTENTE
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ url('space') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            LISTE DES ESPACES
+        </a>
+    </section>
+
+{% endif %}
+
+{% if slug == 'crossfit' %}
+
+    <header style="background-image:url('{{ asset('build/images/crossfit-header.jpg') }}')">
+        <div class="header-title">
+            <p>CROSSFIT</p>
+            <img src="{{ asset('build/images/crossfit-icon.png') }}" alt="Logo Crossfit">
+        </div>
+    </header>
+
+    <section class="space-content">
+        <p>
+            La musculation consiste à effectuer des exercices<br>
+            pour développer la taille et la force des muscles.<br>
+            C'est une activité qui demande du temps et<br>
+            de l'effort pour obtenir des résultats.
+        </p>
+        <img src="{{ asset('build/images/crossfit-1.jpg') }}" alt="Image 1 crossfit">
+        <p>
+            Vous pouvez effectuer des programmes full-body,<br>
+            qui permettent de travailler toutes les zones musculaires<br>
+            et de gagner rapidement en volume et en force,<br>
+            mais également faire une séance par muscle isolé.
+        </p>
+        <img src="{{ asset('build/images/crossfit-2.jpg') }}" alt="Image 2 crossfit">
+        <p>
+            La musculation ne se limite pas à l'entraînement.<br>
+            La nutrition joue un rôle essentiel.<br>
+            Vos coachs sont disponibles pour vous écouter<br>
+            et vous donner tous les conseils nécessaires.
+        </p>
+        <img src="{{ asset('build/images/crossfit-3.jpg') }}" alt="Image 3 crossfit">
+        <p>
+            Dans notre espace "Musculation", vous pourrez<br>
+            trouver toutes les machines les plus récentes.<br>
+            Elles vous permettront de travailler et de progresser<br>
+            dans les meilleures conditions.
+        </p>
+    </section>
+
+    <section class="space-links">
+        <a href="{{ path('space.show', {slug: 'musculation'}) }}">
+            MUSCULATION
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'cardio-abdos'}) }}">
+            CARDIO/ABDOS
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'boxe'}) }}">
+            BOXE
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'sauna'}) }}">
+            SAUNA/DÉTENTE
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ url('space') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            LISTE DES ESPACES
+        </a>
+    </section>
+
+{% endif %}
+
+{% if slug == 'boxe' %}
+
+    <header style="background-image:url('{{ asset('build/images/boxe-header.jpg') }}')">
+        <div class="header-title">
+            <p>BOXE</p>
+            <img src="{{ asset('build/images/boxe-icon.png') }}" alt="Logo Boxe">
+        </div>
+    </header>
+
+    <section class="space-content">
+        <p>
+            La musculation consiste à effectuer des exercices<br>
+            pour développer la taille et la force des muscles.<br>
+            C'est une activité qui demande du temps et<br>
+            de l'effort pour obtenir des résultats.
+        </p>
+        <img src="{{ asset('build/images/boxe-1.jpg') }}" alt="Image 1 boxe">
+        <p>
+            Vous pouvez effectuer des programmes full-body,<br>
+            qui permettent de travailler toutes les zones musculaires<br>
+            et de gagner rapidement en volume et en force,<br>
+            mais également faire une séance par muscle isolé.
+        </p>
+        <img src="{{ asset('build/images/boxe-2.jpg') }}" alt="Image 2 boxe">
+        <p>
+            La musculation ne se limite pas à l'entraînement.<br>
+            La nutrition joue un rôle essentiel.<br>
+            Vos coachs sont disponibles pour vous écouter<br>
+            et vous donner tous les conseils nécessaires.
+        </p>
+        <img src="{{ asset('build/images/boxe-3.jpg') }}" alt="Image 3 boxe">
+        <p>
+            Dans notre espace "Musculation", vous pourrez<br>
+            trouver toutes les machines les plus récentes.<br>
+            Elles vous permettront de travailler et de progresser<br>
+            dans les meilleures conditions.
+        </p>
+    </section>
+
+    <section class="space-links">
+        <a href="{{ path('space.show', {slug: 'musculation'}) }}">
+            MUSCULATION
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'cardio-abdos'}) }}">
+            CARDIO/ABDOS
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'crossfit'}) }}">
+            CROSSFIT
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'sauna'}) }}">
+            SAUNA/DÉTENTE
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ url('space') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            LISTE DES ESPACES
+        </a>
+    </section>
+
+{% endif %}
+
+{% if slug == 'sauna' %}
+
+    <header style="background-image:url('{{ asset('build/images/sauna-header.jpg') }}')">
+        <div class="header-title">
+            <p>SAUNA/DÉTENTE</p>
+            <img src="{{ asset('build/images/sauna-icon.png') }}" alt="Logo Sauna">
+        </div>
+    </header>
+
+    <section class="space-content">
+        <p>
+            La musculation consiste à effectuer des exercices<br>
+            pour développer la taille et la force des muscles.<br>
+            C'est une activité qui demande du temps et<br>
+            de l'effort pour obtenir des résultats.
+        </p>
+        <img src="{{ asset('build/images/sauna-1.jpg') }}" alt="Image 1 sauna">
+        <p>
+            Vous pouvez effectuer des programmes full-body,<br>
+            qui permettent de travailler toutes les zones musculaires<br>
+            et de gagner rapidement en volume et en force,<br>
+            mais également faire une séance par muscle isolé.
+        </p>
+        <img src="{{ asset('build/images/sauna-2.jpg') }}" alt="Image 2 sauna">
+        <p>
+            La musculation ne se limite pas à l'entraînement.<br>
+            La nutrition joue un rôle essentiel.<br>
+            Vos coachs sont disponibles pour vous écouter<br>
+            et vous donner tous les conseils nécessaires.
+        </p>
+        <img src="{{ asset('build/images/sauna-3.jpg') }}" alt="Image 3 sauna">
+        <p>
+            Dans notre espace "Musculation", vous pourrez<br>
+            trouver toutes les machines les plus récentes.<br>
+            Elles vous permettront de travailler et de progresser<br>
+            dans les meilleures conditions.
+        </p>
+    </section>
+
+    <section class="space-links">
+        <a href="{{ path('space.show', {slug: 'musculation'}) }}">
+            MUSCULATION
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'cardio-abdos'}) }}">
+            CARDIO/ABDOS
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'crossfit'}) }}">
+            CROSSFIT
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ path('space.show', {slug: 'boxe'}) }}">
+            BOXE
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        </a>
+        <a href="{{ url('space') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            LISTE DES ESPACES
+        </a>
+    </section>
+
+{% endif %}
 
 {% endblock %}
