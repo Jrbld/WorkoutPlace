@@ -23,7 +23,7 @@ header {
 
 
 /* ---------------------------------------- */
-/* MEDIA SCREEN HEADER */
+/* "MOBILE" HEADER */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
     header {
@@ -36,7 +36,7 @@ header {
 
 
 /* ---------------------------------------- */
-/* SECTION "CHOOSE" */
+/* SECTION CHOOSE */
 /* ---------------------------------------- */
 .choose {
     width: 100%;
@@ -53,7 +53,7 @@ header {
 
 
 /* ---------------------------------------- */
-/* MEDIA SCREEN "CHOOSE" */
+/* "MOBILE" CHOOSE */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
     .choose {
@@ -144,7 +144,7 @@ header {
 
 
 /* ---------------------------------------- */
-/* SECTION "SPACES" */
+/* SECTION SPACES */
 /* ---------------------------------------- */
 .spaces {
     width: 100%;
@@ -170,7 +170,7 @@ header {
 
 
 /* ---------------------------------------- */
-/* MEDIA SCREEN "SPACES" */
+/* "MOBILE" SPACES */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
     .spaces {
@@ -258,7 +258,7 @@ header {
 
 
 /* ---------------------------------------- */
-/* SECTION "COACH" */
+/* SECTION COACH */
 /* ---------------------------------------- */
 .coach {
     width: 100%;
@@ -276,7 +276,7 @@ header {
 
 
 /* ---------------------------------------- */
-/* MEDIA SCREEN "COACH" */
+/* "MOBILE" COACH */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
     .coach {
@@ -361,7 +361,7 @@ header {
 
 
 /* ---------------------------------------- */
-/* SECTION "NEWS" */
+/* SECTION NEWS */
 /* ---------------------------------------- */
 .news {
     width: 100%;
@@ -382,7 +382,7 @@ header {
 
 
 /* ---------------------------------------- */
-/* MEDIA SCREEN "NEWS" */
+/* "MOBILE" NEWS */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
     .news {

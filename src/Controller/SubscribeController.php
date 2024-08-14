@@ -3,16 +3,16 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
 class SubscribeController extends AbstractController
 {
-    #[Route('/subscribe', name: 'app_subscribe')]
-    public function index(): Response
+    #[Route('/abonnements', name: 'subscribe')]
+
+    public function index(Request $request): Response
     {
-        return $this->render('subscribe/index.html.twig', [
-            'controller_name' => 'SubscribeController',
-        ]);
+        return $this->render('subscribe/subscribe.twig');
     }
 }
