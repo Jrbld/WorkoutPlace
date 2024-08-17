@@ -1,0 +1,138 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('lesson') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('lesson') }}
+{% endblock %}
+
+{% block title %}
+
+{% if slug == 'pilates' %}
+Workout Place | Pilates
+{% endif %}
+
+{% if slug == 'rpm' %}
+Workout Place | RPM
+{% endif %}
+
+{% if slug == 'hiit-step' %}
+Workout Place | Hiit Step
+{% endif %}
+
+{% if slug == 'yoga' %}
+Workout Place | Yoga
+{% endif %}
+
+{% if slug == 'body-attack' %}
+Workout Place | Body Attack
+{% endif %}
+
+{% if slug == 'cross-training' %}
+Workout Place | Cross Training
+{% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+{% if slug == 'pilates' %}
+
+    <header style="background-image:url('{{ asset('build/images/pilates.jpg') }}')">
+        <p>PILATES</p>
+    </header>
+
+    <section class="lesson-content">
+        <div class="coach">
+            <img src="{{ asset('build/images/coach-aurelie.png') }}" alt="Coach Aurélie">
+            <h1>
+                DÉPENSEZ-VOUS<br>
+                AVEC <span class="coach-name">AURÉLIE</span>
+            </h1>
+        </div>
+        <p class="lesson-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+            Officiis quas enim non necessitatibus ex excepturi,<br>
+            sed obcaecati quos nulla exercitationem est saepe.
+            <br><br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+            Officiis quas enim non necessitatibus ex excepturi,<br>
+            sed obcaecati quos nulla exercitationem est saepe.
+            <br><br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+            Officiis quas enim non necessitatibus ex excepturi,<br>
+            sed obcaecati quos nulla exercitationem est saepe.
+        </p>
+        <div class="first">
+            <h2>LUNDI, MERCREDI ET VENDREDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="first-time">9H-10H</p>
+        </div>
+        <div class="second">
+            <h2>MARDI, JEUDI ET SAMEDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="second-time">16H-17H</p>
+        </div>
+    </section>
+
+    <section class="others">
+        <div class="first-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="#">
+                    <img src="{{ asset('build/images/coach-maxime.png') }}" alt="Coach Maxime">
+                </a>
+                <p>
+                    MAXIME<br>
+                    RPM
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="#">
+                    <img src="{{ asset('build/images/coach-maeva.png') }}" alt="Coach Maëva">
+                </a>
+                <p>
+                    MAËVA<br>
+                    HIIT STEP
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="#">
+                    <img src="{{ asset('build/images/coach-celine.png') }}" alt="Coach Céline">
+                </a>
+                <p>
+                    CÉLINE<br>
+                    YOGA
+                </p>
+            </div>
+        </div>
+        <div class="second-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="#">
+                    <img src="{{ asset('build/images/coach-moussa.png') }}" alt="Coach Moussa">
+                </a>
+                <p>
+                    MOUSSA<br>
+                    BODY ATTACK
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="#">
+                    <img src="{{ asset('build/images/coach-thomas.png') }}" alt="Coach Thomas">
+                </a>
+                <p>
+                    THOMAS<br>
+                    CROSS TRAINING
+                </p>
+            </div>
+        </div>
+        <a class="lessons-link" href="#">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            TOUS LES COURS
+        </a>
+    </section>
+
+{% endif %}
+
+{% endblock %}
