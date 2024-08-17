@@ -168,3 +168,208 @@
     }
 }
 /* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* PAGE PAR COURS */
+/* ---------------------------------------- */
+header {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.lessons-link:hover {
+    background-color: white;
+    color: #D95D37;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" PAGE PAR ESPACE */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    header {
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+        padding-top: 100px;
+    }
+
+    .lesson-content {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .coach {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    .coach img {
+        width: 100px;
+    }
+
+    .coach h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+    }
+
+    .coach-name {
+        color: #D95D37;
+    }
+
+    .lesson-description {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .first {
+        margin-bottom: 30px;
+    }
+
+    .first h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+    }
+
+    .horizontale-line {
+        border: 1px solid black;
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .first-time {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+        color: #D95D37;
+    }
+
+    .second h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: right;
+    }
+
+    .second-time {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: right;
+        color: #D95D37;
+    }
+    .others {
+        width: 100%;
+        height: auto;
+        background-color: #D95D37;
+        padding: 30px;
+    }
+
+    .first-line-coach {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .coach-link {
+        text-decoration: none;
+    }
+
+    .coach-link img {
+        width: 100px;
+    }
+    
+    .coach-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .coach-head p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+    }
+
+    .second-line-coach {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .lessons-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        background-color: #212121;
+        width: 100%;
+        padding: 8px 16px;
+        border-radius: 10px;
+
+        color: white;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center; 
+    }
+
+    .lessons-link img {
+        width: 20px;
+        rotate: 180deg;
+        margin-right: auto;
+    }
+
+    .lessons-link:active {
+        background-color: white;
+        color: #D95D37;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
