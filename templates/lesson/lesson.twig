@@ -1,20 +1,58 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello LessonController!{% endblock %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('lesson') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('lesson') }}
+{% endblock %}
+
+{% block title %}Workout Place | Cours{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<section class="basic-lessons">
+    <h1>
+        PROFITEZ DE NOS<br>
+        DIFFÉRENTS COURS
+    </h1>
+    <p>(Accessibles à tous)</p>
+    <div class="basic" style="background-image: url('{{ asset('build/images/pilates.jpg') }}');">
+        <a href="{{ path('space.show', {slug: 'musculation'}) }}">
+            PILATES
+        </a>
+    </div>
+    <div class="basic" style="background-image: url('{{ asset('build/images/rpm.jpg') }}');">
+        <a href="{{ path('space.show', {slug: 'cardio-abdos'}) }}">
+            RPM
+        </a>
+    </div>
+    <div class="basic" style="background-image: url('{{ asset('build/images/hiit-step.jpg') }}');">
+        <a href="{{ path('space.show', {slug: 'crossfit'}) }}">
+            HIIT STEP
+        </a>
+    </div>
+    <div class="basic" style="background-image: url('{{ asset('build/images/yoga.jpg') }}');">
+        <a href="{{ path('space.show', {slug: 'boxe'}) }}">
+            YOGA
+        </a>
+    </div>
+</section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Users/jeremyballaud/Desktop/WorkoutPlace/src/Controller/LessonController.php</code></li>
-        <li>Your template at <code>/Users/jeremyballaud/Desktop/WorkoutPlace/templates/lesson/index.html.twig</code></li>
-    </ul>
-</div>
+<section class="premium-lessons">
+    <h1>LES PREMIUM</h1>
+    <p>(Réservés aux abonnés MAX et ULTRA)</p>
+    <div class="premium" style="background-image: url('{{ asset('build/images/body-attack.jpg') }}');">
+        <a href="{{ path('space.show', {slug: 'musculation'}) }}">
+            BODY ATTACK
+        </a>
+    </div>
+    <div class="premium" style="background-image: url('{{ asset('build/images/cross-training.jpg') }}');">
+        <a href="{{ path('space.show', {slug: 'cardio-abdos'}) }}">
+            CROSS TRAINING
+        </a>
+    </div>
+</section>
+
 {% endblock %}

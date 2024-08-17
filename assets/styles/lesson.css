@@ -1,1 +1,170 @@
 @import url('app.css');
+
+/* ---------------------------------------- */
+/* COURS */
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* SECTION BASIC LESSONS */
+/* ---------------------------------------- */
+.basic-lessons {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.basic:hover {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" BASIC LESSONS */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .basic-lessons {
+        padding: 30px 30px 0 30px;
+    }
+
+    .basic-lessons h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .basic-lessons p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .basic {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    .basic a {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 80px 0;
+        text-decoration: none;
+        color: white;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .basic:active {
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* SECTION PREMIUM LESSONS */
+/* ---------------------------------------- */
+.premium-lessons {
+    width: 100%;
+    height: auto;
+    background-color: #D95D37;
+}
+
+.premium:hover {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" BASIC LESSONS */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .premium-lessons {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .premium-lessons h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+    }
+
+    .premium-lessons p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    .premium:not(:last-child) {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -80%;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    .premium:last-child {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+    }
+
+    .premium a {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 80px 0;
+        text-decoration: none;
+        color: white;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .premium:active {
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
