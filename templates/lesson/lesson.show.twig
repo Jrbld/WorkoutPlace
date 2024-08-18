@@ -38,6 +38,9 @@ Workout Place | Cross Training
 
 {% block body %}
 
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
 {% if slug == 'pilates' %}
 
     <header style="background-image:url('{{ asset('build/images/pilates.jpg') }}')">
@@ -53,22 +56,222 @@ Workout Place | Cross Training
             </h1>
         </div>
         <p class="lesson-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
-            Officiis quas enim non necessitatibus ex excepturi,<br>
-            sed obcaecati quos nulla exercitationem est saepe.
+            Aurélie est une coach de Pilates passionnée et<br>
+            expérimentée, dédiée à aider les adhérents à atteindre<br>
+            leurs objectifs de bien-être et de forme physique.
             <br><br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
-            Officiis quas enim non necessitatibus ex excepturi,<br>
-            sed obcaecati quos nulla exercitationem est saepe.
+            Au début de chaque cours, Aurélie vous fait<br>
+            commencer par une série d'échauffement<br>
+            pour préparer le corps et l'esprit.
             <br><br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
-            Officiis quas enim non necessitatibus ex excepturi,<br>
-            sed obcaecati quos nulla exercitationem est saepe.
+            Chaque mouvement de chaque exercice est exécuté<br>
+            avec précision et contrôle, en mettant l'accent<br>
+            sur la respiration et l'alignement corporel.
         </p>
         <div class="first">
             <h2>LUNDI, MERCREDI ET VENDREDI</h2>
             <span class="horizontale-line"></span>
-            <p class="first-time">9H-10H</p>
+            <p class="first-time">09H-10H</p>
+        </div>
+        <div class="second">
+            <h2>MARDI, JEUDI ET SAMEDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="second-time">14H-15H</p>
+        </div>
+    </section>
+
+    <section class="others">
+        <div class="first-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'rpm'}) }}">
+                    <img src="{{ asset('build/images/coach-maxime.png') }}" alt="Coach Maxime">
+                </a>
+                <p>
+                    MAXIME<br>
+                    RPM
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'hiit-step'}) }}">
+                    <img src="{{ asset('build/images/coach-maeva.png') }}" alt="Coach Maëva">
+                </a>
+                <p>
+                    MAËVA<br>
+                    HIIT STEP
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'yoga'}) }}">
+                    <img src="{{ asset('build/images/coach-celine.png') }}" alt="Coach Céline">
+                </a>
+                <p>
+                    CÉLINE<br>
+                    YOGA
+                </p>
+            </div>
+        </div>
+        <div class="second-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'body-attack'}) }}">
+                    <img src="{{ asset('build/images/coach-moussa.png') }}" alt="Coach Moussa">
+                </a>
+                <p>
+                    MOUSSA<br>
+                    BODY ATTACK
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'cross-training'}) }}">
+                    <img src="{{ asset('build/images/coach-thomas.png') }}" alt="Coach Thomas">
+                </a>
+                <p>
+                    THOMAS<br>
+                    CROSS TRAINING
+                </p>
+            </div>
+        </div>
+        <a class="lessons-link" href="{{ url('lesson') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            TOUS LES COURS
+        </a>
+    </section>
+
+{% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% if slug == 'rpm' %}
+
+    <header style="background-image:url('{{ asset('build/images/rpm.jpg') }}')">
+        <p>RPM</p>
+    </header>
+
+    <section class="lesson-content">
+        <div class="coach">
+            <img src="{{ asset('build/images/coach-maxime.png') }}" alt="Coach Maxime">
+            <h1>
+                DÉPASSEZ-VOUS<br>
+                AVEC <span class="coach-name">MAXIME</span>
+            </h1>
+        </div>
+        <p class="lesson-description">
+            Maxime est un coach de RPM dynamique et motivant.<br>
+            Il inspire ses élèves à repousser leurs limites et<br>
+            à atteindre leurs objectifs de fitness avec énergie.
+            <br><br>
+            Chaque session est conçue pour améliorer l'endurance<br>
+            cardiovasculaire et brûler des calories<br>
+            de manière efficace.
+            <br><br>
+            Les participants sont guidés à travers des variations<br>
+            de résistance et de vitesse, simulant des montées<br>
+            et des sprints.
+        </p>
+        <div class="first">
+            <h2>LUNDI, MERCREDI ET VENDREDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="first-time">10H-11H</p>
+        </div>
+        <div class="second">
+            <h2>MARDI, JEUDI ET SAMEDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="second-time">15H-16H</p>
+        </div>
+    </section>
+
+    <section class="others">
+        <div class="first-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'pilates'}) }}">
+                    <img src="{{ asset('build/images/coach-aurelie.png') }}" alt="Coach Aurélie">
+                </a>
+                <p>
+                    AURÉLIE<br>
+                    PILATES
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'hiit-step'}) }}">
+                    <img src="{{ asset('build/images/coach-maeva.png') }}" alt="Coach Maëva">
+                </a>
+                <p>
+                    MAËVA<br>
+                    HIIT STEP
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'yoga'}) }}">
+                    <img src="{{ asset('build/images/coach-celine.png') }}" alt="Coach Céline">
+                </a>
+                <p>
+                    CÉLINE<br>
+                    YOGA
+                </p>
+            </div>
+        </div>
+        <div class="second-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'body-attack'}) }}">
+                    <img src="{{ asset('build/images/coach-moussa.png') }}" alt="Coach Moussa">
+                </a>
+                <p>
+                    MOUSSA<br>
+                    BODY ATTACK
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'cross-training'}) }}">
+                    <img src="{{ asset('build/images/coach-thomas.png') }}" alt="Coach Thomas">
+                </a>
+                <p>
+                    THOMAS<br>
+                    CROSS TRAINING
+                </p>
+            </div>
+        </div>
+        <a class="lessons-link" href="{{ url('lesson') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            TOUS LES COURS
+        </a>
+    </section>
+
+{% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% if slug == 'hiit-step' %}
+
+    <header style="background-image:url('{{ asset('build/images/hiit-step.jpg') }}')">
+        <p>HIIT STEP</p>
+    </header>
+
+    <section class="lesson-content">
+        <div class="coach">
+            <img src="{{ asset('build/images/coach-maeva.png') }}" alt="Coach Maëva">
+            <h1>
+                SURPASSEZ-VOUS<br>
+                AVEC <span class="coach-name">MAËVA</span>
+            </h1>
+        </div>
+        <p class="lesson-description">
+            Maëva est une coach énergique et passionnée,<br>
+            connue pour ses séances intenses et motivantes.<br>
+            Elle encourage ses élèves à se surpasser.
+            <br><br>
+            Le cours commence par un échauffement dynamique,<br>
+            suivi de séquences de haute intensité combinant<br>
+            cardio et renforcement musculaire.
+            <br><br>
+            Les participants alternent entre des mouvements<br>
+            rapides sur le step et des périodes de récupération.<br>
+            Fin de la séance avec une phase de détente des muscles.
+        </p>
+        <div class="first">
+            <h2>LUNDI, MERCREDI ET VENDREDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="first-time">11H-12H</p>
         </div>
         <div class="second">
             <h2>MARDI, JEUDI ET SAMEDI</h2>
@@ -80,7 +283,16 @@ Workout Place | Cross Training
     <section class="others">
         <div class="first-line-coach">
             <div class="coach-head">
-                <a class="coach-link" href="#">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'pilates'}) }}">
+                    <img src="{{ asset('build/images/coach-aurelie.png') }}" alt="Coach Aurélie">
+                </a>
+                <p>
+                    AURÉLIE<br>
+                    PILATES
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'rpm'}) }}">
                     <img src="{{ asset('build/images/coach-maxime.png') }}" alt="Coach Maxime">
                 </a>
                 <p>
@@ -89,16 +301,7 @@ Workout Place | Cross Training
                 </p>
             </div>
             <div class="coach-head">
-                <a class="coach-link" href="#">
-                    <img src="{{ asset('build/images/coach-maeva.png') }}" alt="Coach Maëva">
-                </a>
-                <p>
-                    MAËVA<br>
-                    HIIT STEP
-                </p>
-            </div>
-            <div class="coach-head">
-                <a class="coach-link" href="#">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'yoga'}) }}">
                     <img src="{{ asset('build/images/coach-celine.png') }}" alt="Coach Céline">
                 </a>
                 <p>
@@ -109,7 +312,7 @@ Workout Place | Cross Training
         </div>
         <div class="second-line-coach">
             <div class="coach-head">
-                <a class="coach-link" href="#">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'body-attack'}) }}">
                     <img src="{{ asset('build/images/coach-moussa.png') }}" alt="Coach Moussa">
                 </a>
                 <p>
@@ -118,7 +321,7 @@ Workout Place | Cross Training
                 </p>
             </div>
             <div class="coach-head">
-                <a class="coach-link" href="#">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'cross-training'}) }}">
                     <img src="{{ asset('build/images/coach-thomas.png') }}" alt="Coach Thomas">
                 </a>
                 <p>
@@ -127,12 +330,315 @@ Workout Place | Cross Training
                 </p>
             </div>
         </div>
-        <a class="lessons-link" href="#">
+        <a class="lessons-link" href="{{ url('lesson') }}">
             <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
             TOUS LES COURS
         </a>
     </section>
 
 {% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% if slug == 'yoga' %}
+
+    <header style="background-image:url('{{ asset('build/images/yoga.jpg') }}')">
+        <p>YOGA</p>
+    </header>
+
+    <section class="lesson-content">
+        <div class="coach">
+            <img src="{{ asset('build/images/coach-celine.png') }}" alt="Coach Céline">
+            <h1>
+                DÉTENDEZ-VOUS<br>
+                AVEC <span class="coach-name">CÉLINE</span>
+            </h1>
+        </div>
+        <p class="lesson-description">
+            Spécialisée dans les pratiques de relaxation et de<br>
+            bien-être, Céline guide ses élèves avec bienveillance<br>
+            pour les aider à trouver l'équilibre et la sérénité.
+            <br><br>
+            Les séances de Yoga reposent sur des exercices de<br>
+            respiration et des étirements doux,<br>
+            pour apaiser le corps et l'esprit.
+            <br><br>
+            Les séances se terminent par une phase de relaxation,<br>
+            permettant aux participants de se détendre et de<br>
+            repartir avec un sentiment de paix intérieure.
+        </p>
+        <div class="first">
+            <h2>LUNDI, MERCREDI ET VENDREDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="first-time">14H-15H</p>
+        </div>
+        <div class="second">
+            <h2>MARDI, JEUDI ET SAMEDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="second-time">09H-10H</p>
+        </div>
+    </section>
+
+    <section class="others">
+        <div class="first-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'pilates'}) }}">
+                    <img src="{{ asset('build/images/coach-aurelie.png') }}" alt="Coach Aurélie">
+                </a>
+                <p>
+                    AURÉLIE<br>
+                    PILATES
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'rpm'}) }}">
+                    <img src="{{ asset('build/images/coach-maxime.png') }}" alt="Coach Maxime">
+                </a>
+                <p>
+                    MAXIME<br>
+                    RPM
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'hiit-step'}) }}">
+                    <img src="{{ asset('build/images/coach-maeva.png') }}" alt="Coach Maëva">
+                </a>
+                <p>
+                    MAËVA<br>
+                    HIIT STEP
+                </p>
+            </div>
+        </div>
+        <div class="second-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'body-attack'}) }}">
+                    <img src="{{ asset('build/images/coach-moussa.png') }}" alt="Coach Moussa">
+                </a>
+                <p>
+                    MOUSSA<br>
+                    BODY ATTACK
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'cross-training'}) }}">
+                    <img src="{{ asset('build/images/coach-thomas.png') }}" alt="Coach Thomas">
+                </a>
+                <p>
+                    THOMAS<br>
+                    CROSS TRAINING
+                </p>
+            </div>
+        </div>
+        <a class="lessons-link" href="{{ url('lesson') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            TOUS LES COURS
+        </a>
+    </section>
+
+{% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% if slug == 'body-attack' %}
+
+    <header style="background-image:url('{{ asset('build/images/body-attack.jpg') }}')">
+        <p>BODY ATTACK</p>
+    </header>
+
+    <section class="lesson-content">
+        <div class="coach">
+            <img src="{{ asset('build/images/coach-moussa.png') }}" alt="Coach Moussa">
+            <h1>
+                DÉFENDEZ-VOUS<br>
+                AVEC <span class="coach-name">MOUSSA</span>
+            </h1>
+        </div>
+        <p class="lesson-description">
+            Moussa est un prof de Body Attack inspirant,<br>
+            reconnu pour ses séances dynamiques et motivantes.<br>
+            Il pousse ses élèves à se dépasser tout en s'amusant.
+            <br><br>
+            Vous débuterez par un échauffement, suivi de<br>
+            mouvements cardio et de renforcement musculaire.<br>
+            Les exercices sont variés et rythmés.
+            <br><br>
+            Les participants alternent entre des séquences<br>
+            de haute intensité et des périodes de récupération,
+            garantissant un entraînement complet et stimulant.
+        </p>
+        <div class="first">
+            <h2>LUNDI, MERCREDI ET VENDREDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="first-time">15H-16H</p>
+        </div>
+        <div class="second">
+            <h2>MARDI, JEUDI ET SAMEDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="second-time">10H-11H</p>
+        </div>
+    </section>
+
+    <section class="others">
+        <div class="first-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'pilates'}) }}">
+                    <img src="{{ asset('build/images/coach-aurelie.png') }}" alt="Coach Aurélie">
+                </a>
+                <p>
+                    AURÉLIE<br>
+                    PILATES
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'rpm'}) }}">
+                    <img src="{{ asset('build/images/coach-maxime.png') }}" alt="Coach Maxime">
+                </a>
+                <p>
+                    MAXIME<br>
+                    RPM
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'hiit-step'}) }}">
+                    <img src="{{ asset('build/images/coach-maeva.png') }}" alt="Coach Maëva">
+                </a>
+                <p>
+                    MAËVA<br>
+                    HIIT STEP
+                </p>
+            </div>
+        </div>
+        <div class="second-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'yoga'}) }}">
+                    <img src="{{ asset('build/images/coach-celine.png') }}" alt="Coach Céline">
+                </a>
+                <p>
+                    CÉLINE<br>
+                    YOGA
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'cross-training'}) }}">
+                    <img src="{{ asset('build/images/coach-thomas.png') }}" alt="Coach Thomas">
+                </a>
+                <p>
+                    THOMAS<br>
+                    CROSS TRAINING
+                </p>
+            </div>
+        </div>
+        <a class="lessons-link" href="{{ url('lesson') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            TOUS LES COURS
+        </a>
+    </section>
+
+{% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% if slug == 'cross-training' %}
+
+    <header style="background-image:url('{{ asset('build/images/cross-training.jpg') }}')">
+        <p>CROSS TRAINING</p>
+    </header>
+
+    <section class="lesson-content">
+        <div class="coach">
+            <img src="{{ asset('build/images/coach-thomas.png') }}" alt="Coach Thomas">
+            <h1>
+                DÉFOULEZ-VOUS<br>
+                AVEC <span class="coach-name">THOMAS</span>
+            </h1>
+        </div>
+        <p class="lesson-description">
+            Thomas est passionné, expérimenté et motivant.<br>
+            Avec une approche personnalisée, il adapte<br>
+            chaque séance aux besoins individuels de ses élèves.
+            <br><br>
+            Lors des cours de Cross training,
+            vous enchaînerez des exercices variés, combinant force, endurance et agilité,<br>
+            pour un entraînement complet et intense.
+            <br><br>
+            Chaque séance se termine par des étirements et<br>
+            une récupération active, permettant de réduire<br>
+            les courbatures et d'améliorer la flexibilité.
+        </p>
+        <div class="first">
+            <h2>LUNDI, MERCREDI ET VENDREDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="first-time">16H-17H</p>
+        </div>
+        <div class="second">
+            <h2>MARDI, JEUDI ET SAMEDI</h2>
+            <span class="horizontale-line"></span>
+            <p class="second-time">11H-12H</p>
+        </div>
+    </section>
+
+    <section class="others">
+        <div class="first-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'pilates'}) }}">
+                    <img src="{{ asset('build/images/coach-aurelie.png') }}" alt="Coach Aurélie">
+                </a>
+                <p>
+                    AURÉLIE<br>
+                    PILATES
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'rpm'}) }}">
+                    <img src="{{ asset('build/images/coach-maxime.png') }}" alt="Coach Maxime">
+                </a>
+                <p>
+                    MAXIME<br>
+                    RPM
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'hiit-step'}) }}">
+                    <img src="{{ asset('build/images/coach-maeva.png') }}" alt="Coach Maëva">
+                </a>
+                <p>
+                    MAËVA<br>
+                    HIIT STEP
+                </p>
+            </div>
+        </div>
+        <div class="second-line-coach">
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'yoga'}) }}">
+                    <img src="{{ asset('build/images/coach-celine.png') }}" alt="Coach Céline">
+                </a>
+                <p>
+                    CÉLINE<br>
+                    YOGA
+                </p>
+            </div>
+            <div class="coach-head">
+                <a class="coach-link" href="{{ path('lesson.show', {slug: 'body-attack'}) }}">
+                    <img src="{{ asset('build/images/coach-moussa.png') }}" alt="Coach Moussa">
+                </a>
+                <p>
+                    MOUSSA<br>
+                    BODY ATTACK
+                </p>
+            </div>
+        </div>
+        <a class="lessons-link" href="{{ url('lesson') }}">
+            <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+            TOUS LES COURS
+        </a>
+    </section>
+
+{% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
 
 {% endblock %}
