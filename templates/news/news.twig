@@ -1,20 +1,126 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello NewsController!{% endblock %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('news') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('news') }}
+{% endblock %}
+
+{% block title %}Workout Place | Actualités{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<section class="news-intro">
+    <h1>
+        TOUJOURS À LA POINTE<br>
+        DE L'ACTUALITÉ !
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+    </p>
+</section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Users/jeremyballaud/Desktop/WorkoutPlace/src/Controller/NewsController.php</code></li>
-        <li>Your template at <code>/Users/jeremyballaud/Desktop/WorkoutPlace/templates/news/index.html.twig</code></li>
-    </ul>
+<div class="news-title">
+    <h2>PROGRAMMES</h2>
 </div>
+
+<section class="news-section">
+    <div class="news">
+        <div class="news-image" style="background-image: url('{{ asset('build/images/workout.jpg') }}');">
+            <a class="one-line-title" href="{{ path('news.show', {slug: 'full-body'}) }}">
+                PROGRAMME FULL BODY
+            </a>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+            porro corporis tempore. Doloribus exercitationem.
+        </p>
+    </div>
+    <div class="news">
+        <div class="news-image" style="background-image: url('{{ asset('build/images/perte-poids.jpg') }}');">
+            <a class="two-lines-title" href="{{ path('news.show', {slug: 'perte-poids'}) }}">
+                PROGRAMME SPÉCIAL<br>
+                PERTE DE POIDS
+            </a>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+            porro corporis tempore. Doloribus exercitationem.
+        </p>
+    </div>
+</section>
+
+<div class="news-title">
+    <h2>DÉCOUVERTES</h2>
+</div>
+
+<section class="news-section">
+    <div class="news">
+        <div class="news-image" style="background-image: url('{{ asset('build/images/playlist.jpg') }}');">
+            <a class="one-line-title" href="{{ path('news.show', {slug: 'playlist'}) }}">
+                PLAYLIST DE LA SEMAINE
+            </a>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+            porro corporis tempore. Doloribus exercitationem.
+        </p>
+    </div>
+    <div class="news">
+        <div class="news-image" style="background-image: url('{{ asset('build/images/men-outfit.jpg') }}');">
+            <a class="two-lines-title" href="{{ path('news.show', {slug: 'nouvelle-collection'}) }}">
+                NOUVELLE COLLECTION<br>
+                WORKOUT PLACE
+            </a>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+            porro corporis tempore. Doloribus exercitationem.
+        </p>
+    </div>
+</section>
+
+<div class="news-title">
+    <h2>RECETTES</h2>
+</div>
+
+<section class="news-section">
+    <div class="news">
+        <div class="news-image" style="background-image: url('{{ asset('build/images/poke.jpg') }}');">
+            <a class="one-line-title" href="{{ path('news.show', {slug: 'poke'}) }}">
+                PLAYLIST DE LA SEMAINE
+            </a>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+            porro corporis tempore. Doloribus exercitationem.
+        </p>
+    </div>
+    <div class="news">
+        <div class="news-image" style="background-image: url('{{ asset('build/images/meal-prep.jpg') }}');">
+            <a class="one-line-title" href="{{ path('news.show', {slug: 'meal-prep'}) }}">
+                "MEAL PREP" DE L'ÉTÉ
+            </a>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+            porro corporis tempore. Doloribus exercitationem.
+        </p>
+    </div>
+</section>
+
 {% endblock %}

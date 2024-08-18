@@ -1,0 +1,411 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('news') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('news') }}
+{% endblock %}
+
+{% block title %}
+
+{% if slug == 'full-body' %}
+Workout Place | Programme Full body
+{% endif %}
+
+{% if slug == 'perte-poids' %}
+Workout Place | Programme Perte de poids
+{% endif %}
+
+{% if slug == 'playlist' %}
+Workout Place | Playlist
+{% endif %}
+
+{% if slug == 'nouvelle-collection' %}
+Workout Place | Nouvelle collection
+{% endif %}
+
+{% if slug == 'poke' %}
+Workout Place | Poké hyper protéiné
+{% endif %}
+
+{% if slug == 'meal-prep' %}
+Workout Place | Meal Prep de l'été
+{% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% if slug == 'full-body' %}
+
+<header style="background-image:url('{{ asset('build/images/workout.jpg') }}')">
+    <p class="one-line-header">PROGRAMME FULL BODY</p>
+</header>
+
+<section class="news-content">
+    <p class="news-presentation">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+    </p>
+    <div class="day">
+        <h2>JOUR 1 - DOS</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE</p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3<br>
+        Exercice 4<br>
+        Exercice 5<br>
+        Exercice 6
+    </p>
+    <div class="day">
+        <h2>JOUR 2 - PECTORAUX</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE</p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3<br>
+        Exercice 4<br>
+        Exercice 5<br>
+        Exercice 6
+    </p>
+    <div class="day">
+        <h2>JOUR 3 - JAMBES</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE</p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3<br>
+        Exercice 4<br>
+        Exercice 5<br>
+        Exercice 6
+    </p>
+    <div class="day">
+        <h2>JOUR 4 - ÉPAULES</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE</p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3<br>
+        Exercice 4<br>
+        Exercice 5<br>
+        Exercice 6
+    </p>
+    <div class="day">
+        <h2>JOUR 5 - BRAS</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE</p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3<br>
+        Exercice 4<br>
+        Exercice 5<br>
+        Exercice 6
+    </p>
+    <div class="day">
+        <h2>CIRCUIT D'ABDOS</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">4 SÉRIES AVEC 1 MINUTE DE REPOS ENTRE CHAQUE SÉRIE</p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3<br>
+        Exercice 4<br>
+        Exercice 5
+    </p>
+    <div class="day">
+        <h2>CARDIO</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">
+            ENTRE 10 ET 20 MINUTES<br>
+            EXERCICE AU CHOIX (COURSE, VÉLO, ESCALIER...)
+        </p>
+    </div>
+</section>
+
+<section class="links">
+    <a href="{{ path('news.show', {slug: 'perte-poids'}) }}">
+        PROGRAMME PERTE DE POIDS
+        <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+    </a>
+    <a href="{{ url('news') }}">
+        <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        LISTE DES ACTUALITÉS
+    </a>
+</section>
+
+{% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% if slug == 'perte-poids' %}
+
+<header style="background-image:url('{{ asset('build/images/perte-poids.jpg') }}')">
+    <p class="two-lines-header">
+        PROGRAMME SPÉCIAL<br>
+        PERTE DE POIDS
+    </p>
+</header>
+
+<section class="news-content">
+    <p class="news-presentation">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+    </p>
+    <div class="day">
+        <h2>JOUR 1 - COURSE/DOS</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">
+            45 MINUTES DE COURSE +<br>
+            4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE
+        </p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3
+    </p>
+    <div class="day">
+        <h2>JOUR 2 - VÉLO/PECTORAUX</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">
+            45 MINUTES DE VÉLO +<br>
+            4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE
+        </p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3
+    </p>
+    <div class="day">
+        <h2>JOUR 3 - ESCALIER/JAMBES</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">
+            30 MINUTES D'ESCALIER +<br>
+            4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE
+        </p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3
+    </p>
+    <div class="day">
+        <h2>JOUR 4 - ELLIPTIQUE/ÉPAULES</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">
+            30 MINUTES D'ELLIPTIQUE' +<br>
+            4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE
+        </p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3
+    </p>
+    <div class="day">
+        <h2>JOUR 5 - RAMEUR/BRAS</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">
+            30 MINUTES DE RAMEUR +<br>
+            4 SÉRIES DE 8 À 12 RÉPÉTITIONS PAR EXERCICE
+        </p>
+    </div>
+    <p class="exercices">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3
+    </p>
+    <div class="day">
+        <h2>CIRCUIT D'ABDOS</h2>
+        <span class="horizontale-line"></span>
+        <p class="series">
+            4 SÉRIES AVEC 1 MINUTE DE REPOS ENTRE CHAQUE SÉRIE<br>
+            À FAIRE À LA FIN DE CHAQUE SÉANCE
+        </p>
+    </div>
+    <p class="exercices-perte-poids">
+        Exercice 1<br>
+        Exercice 2<br>
+        Exercice 3<br>
+        Exercice 4<br>
+        Exercice 5
+    </p>
+</section>
+
+<section class="links">
+    <a href="{{ path('news.show', {slug: 'full-body'}) }}">
+        PROGRAMME FULL BODY
+        <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+    </a>
+    <a href="{{ url('news') }}">
+        <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        LISTE DES ACTUALITÉS
+    </a>
+</section>
+
+{% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% if slug == 'playlist' %}
+
+<header style="background-image:url('{{ asset('build/images/playlist.jpg') }}')">
+    <p class="one-line-header">
+        PLAYLIST DE LA SEMAINE
+    </p>
+</header>
+
+<section class="news-content">
+    <p class="news-presentation">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+    </p>
+    <div class="news-content-title">
+        <p>TECHNO</p>
+    </div>
+    <p class="playlist">
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span>
+    </p>
+    <div class="news-content-title">
+        <p>ÉLECTRO</p>
+    </div>
+    <p class="playlist">
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span>
+    </p>
+    <div class="news-content-title">
+        <p>ROCK</p>
+    </div>
+    <p class="playlist">
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span>
+    </p>
+    <div class="news-content-title">
+        <p>VARIÉTÉS FRANÇAISES</p>
+    </div>
+    <p class="playlist">
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span><br>
+        NOM MUSIQUE <span>(NOM ARTISTE)</span>
+    </p>
+</section>
+
+<section class="links">
+    <a href="{{ path('news.show', {slug: 'nouvelle-collection'}) }}">
+        NOUVELLE COLLECTION WP
+        <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+    </a>
+    <a href="{{ url('news') }}">
+        <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        LISTE DES ACTUALITÉS
+    </a>
+</section>
+
+{% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% if slug == 'nouvelle-collection' %}
+
+<header style="background-image:url('{{ asset('build/images/men-outfit.jpg') }}')">
+    <p class="two-lines-header">
+        NOUVELLE COLLECTION<br>
+        WORKOUT PLACE
+    </p>
+</header>
+
+<section class="news-content">
+    <p class="news-presentation">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+    </p>
+    <h2 class="collection-title">COLLECTION FEMMES</h2>
+    <img class="collection-img" src="{{ asset('build/images/women-outfit.jpg') }}" alt="Collection femmes">
+    <p class="collection-presentation">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+    </p>
+    <h2 class="collection-title">COLLECTION HOMMES</h2>
+    <img class="collection-img" src="{{ asset('build/images/men-outfit.jpg') }}" alt="Collection hommes">
+    <p class="collection-presentation">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Itaque, accusamus quae! Excepturi eos quisquam ullam<br>
+        porro corporis tempore. Doloribus exercitationem.
+    </p>
+    <h2 class="collection-title">
+        BIENTÔT EN VENTE ...<br>
+        ... RESTEZ CONNECTÉ(E) !
+    </h2>
+</section>
+
+<section class="links">
+    <a href="{{ path('news.show', {slug: 'playlist'}) }}">
+        PLAYLIST DE LA SEMAINE
+        <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+    </a>
+    <a href="{{ url('news') }}">
+        <img src="{{ asset('build/images/orange-arrow.png') }}" alt="Flèche">
+        LISTE DES ACTUALITÉS
+    </a>
+</section>
+
+{% endif %}
+
+{# ----------------------------------------------------------------------------------- #}
+{# ----------------------------------------------------------------------------------- #}
+
+{% endblock %}
