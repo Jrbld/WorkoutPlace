@@ -17,7 +17,7 @@
 <section class="choose">
     <h1>POURQUOI NOUS CHOISIR ?</h1>
     <p id="choose-presentation">
-        WORKOUT PLACE est une toute nouvelle salle de sport, proposant de nombreux services à tous ses pratiquants.<br>
+        WORKOUT PLACE est une toute nouvelle salle de sport, proposant de nombreux services à tous ses pratiquants.
         Tout est pensé pour vous donner envie de vous entraîner et de vous surpasser !
     </p>
 
@@ -28,9 +28,9 @@
                 <h2>OUVERT 24H/24 - 7J/7</h2>
             </div>
             <p>
-                Venez vous entraîner à l'heure<br>
-                que vous souhaitez !<br>
-                L'accueil est ouvert tous les jours<br>
+                Venez vous entraîner à l'heure
+                que vous souhaitez !
+                L'accueil est ouvert tous les jours
                 de 8h à 12h et de 14h à 18h.
             </p>
         </div>
@@ -40,9 +40,9 @@
                 <h2>MATÉRIEL DERNIER CRI</h2>
             </div>
             <p>
-                Toutes nos machines sont les plus récentes,<br>
-                elles ont été choisies et testées<br>
-                pour vous permettre de progresser.<br>
+                Toutes nos machines sont les plus récentes,
+                elles ont été choisies et testées
+                pour vous permettre de progresser.
                 N'hésitez pas à toutes les essayer !
             </p>
         </div>
@@ -52,21 +52,21 @@
                 <h2>SALLE DE 10 000 M²</h2>
             </div>
             <p>
-                Bienvenue dans la plus grande<br>
-                salle de sport de France !<br>
-                Vous trouverez tout ce dont vous avez besoin,<br>
+                Bienvenue dans la plus grande
+                salle de sport de France !
+                Vous trouverez tout ce dont vous avez besoin,
                 pour les exercices que vous voulez !
             </p>
         </div>
-        <a id="subscribe-button" href="{{ url('subscribe') }}">S'INSCRIRE</a>
+        <a id="subscribe-button" href="{{ url('subscribe') }}">NOS ABONNEMENTS</a>
     </div>
 </section>
 
 <section class="spaces">
     <h1>DES ESPACES POUR TOUS</h1>
     <p>
-        Notre salle comporte de nombreux espaces adaptés<br>
-        à tous vos besoins et à tous les sports<br>
+        Notre salle comporte de nombreux espaces adaptés
+        à tous vos besoins et à tous les sports
         que vous souhaitez pratiquer.
     </p>
 
@@ -87,10 +87,10 @@
 <section class="coach">
     <h1>DES COACHS DIPLOMÉS</h1>
     <p id="coach-presentation">
-        Notre équipe est composée de 6 coachs diplomés<br>
-        et spécialisés dans différents domaines.<br>
-        Ils seront toujours à votre écoute<br>
-        et vous dispenseront de nombreux cours !
+        Notre équipe est composée de 6 coachs diplomés
+        et spécialisés dans différents domaines.
+        Ils seront toujours à votre écoute
+        et vous dispenseront de nombreux cours.
     </p>
 
     <div id="coach-photo" style="background-image: url('{{ asset('build/images/team.jpg') }}');"></div>
@@ -99,8 +99,8 @@
         <h2>PILATES</h2>
         <span></span>
         <p>
-            Le Pilates est une méthode d'entraînement qui allie<br>
-            renforcement musculaire, alignement postural et respiration contrôlée, et qui s'adresse à tous.<br>
+            Le Pilates est une méthode d'entraînement qui allie
+            renforcement musculaire, alignement postural et respiration contrôlée, et qui s'adresse à tous.
         </p>
     </div>
 
@@ -108,7 +108,7 @@
         <h2>BODY ATTACK</h2>
         <span></span>
         <p>
-            Le Body Attack est un programme de fitness énergique<br>
+            Le Body Attack est un programme de fitness énergique
             qui combine des mouvements athlétiques, tels que la course et les sauts, avec des exercices de renforcement.
         </p>
     </div>
@@ -117,8 +117,8 @@
         <h2>HIIT STEP</h2>
         <span></span>
         <p>
-            Le HIITSTEP est un entraînement en intervalles<br>
-            de haute intensité qui utilise une plateforme d'escalier<br>
+            Le HIITSTEP est un entraînement en intervalles
+            de haute intensité qui utilise une plateforme d'escalier
             pour des exercices dynamiques.
         </p>
     </div>
@@ -129,18 +129,18 @@
 <section class="news">
     <h1>SUIVEZ NOS ACTUALITÉS !</h1>
     <p id="news-presentation">
-        Sur notre site, vous trouverez de nombreux contenus<br>
-        que nous vous avons préparés pour mieux<br>
-        aborder votre quotidien à travers,<br>
+        Sur notre site, vous trouverez de nombreux contenus
+        que nous vous avons préparés pour mieux
+        aborder votre quotidien à travers,
         par exemple, vos entraînements et vos repas.
     </p>
 
     <div class="news-cards">
         <div id="news-card-1" style="background-image: url('{{ asset('build/images/workout.jpg') }}');">
-            <a href="#">PROGRAMME FULL BODY</a>
+            <a href="{{ path('news.show', {slug: 'full-body'}) }}">PROGRAMME FULL BODY</a>
         </div>
         <div id="news-card-2" style="background-image: url('{{ asset('build/images/playlist.jpg') }}');">
-            <a href="#">PLAYLIST DE LA SEMAINE</a>
+            <a href="{{ path('news.show', {slug: 'playlist'}) }}">PLAYLIST DE LA SEMAINE</a>
         </div>
         <div id="news-card-3" style="background-image: url('{{ asset('build/images/poke.jpg') }}');">
             <a href="#">LE POKÉ HYPER PROTÉINÉ</a>

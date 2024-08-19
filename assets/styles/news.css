@@ -110,11 +110,6 @@
     .two-lines-title {
         padding: 65px 0;
     }
-
-    .news-section p {
-        text-align: center;
-        margin-bottom: 30px;
-    }
 }
 /* ---------------------------------------- */
 
@@ -357,6 +352,25 @@ header {
         background-position: center;
         margin-bottom: 30px;
         border-radius: 15px;
+    }
+
+    .food-list {
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    .recipe {
+        line-height: 1.5;
+    }
+
+    .recipe:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .recipe span, .food-list span {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-style: italic;
     }
 }
 /* ---------------------------------------- */
