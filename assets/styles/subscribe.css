@@ -7,12 +7,6 @@
     width: 100%;
     margin-top: 100px;
 }
-
-.subscription-button:hover {
-    background-color: white;
-    color: #D95D37;
-    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
-}
 /* ---------------------------------------- */
 
 
@@ -64,7 +58,6 @@
     #subscription-1 p, #subscription-2 p, #subscription-3 p {
         color: white;
         text-align: center;
-        margin-bottom: 30px;
     }
 
     .white-title {
@@ -73,25 +66,6 @@
 
     .orange-title {
         color: #D95D37;
-    }
-
-    .subscription-button {
-        text-decoration: none;
-        background-color: #D95D37;
-        color: white;
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        font-style: italic;
-        text-align: center;
-        padding: 8px 16px;
-        border-radius: 10px;
-    }
-
-    .subscription-button:active {
-        background-color: white;
-        color: #D95D37;
-        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
     }
 }
 /* ---------------------------------------- */
@@ -127,12 +101,6 @@
         text-align: center;
         margin-bottom: 30px;
         color: white;
-    }
-
-    #offers-presentation {
-        color: white;
-        text-align: center;
-        margin-bottom: 30px;
     }
 
     #family {
@@ -270,15 +238,15 @@
         width: 100%;
         height: auto;
         background-color: #D95D37;
+        padding: 30px;
     }
 
-    .legend h2 {
+    .legend p {
         font-family: 'Oswald', sans-serif;
-        font-size: 24px;
+        font-size: 16px;
         font-weight: bold;
         font-style: italic;
         text-align: center;
-        padding: 30px;
         color: white;
     }
 }
