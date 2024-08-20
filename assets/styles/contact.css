@@ -1,1 +1,55 @@
 @import url('app.css');
+
+/* ---------------------------------------- */
+/* CONTACT */
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* SECTION CONTACT */
+/* ---------------------------------------- */
+header {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" CONTACT */
+/* ---------------------------------------- */
+header {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+.contact {
+    padding: 30px;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 30px
+}
+/* ---------------------------------------- */

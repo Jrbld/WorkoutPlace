@@ -1,1 +1,52 @@
 @import url('app.css');
+
+/* ---------------------------------------- */
+/* CONNEXION */
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* SECTION CONNEXION */
+/* ---------------------------------------- */
+header {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.connexion {
+    width: 100%;
+    height: auto;
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" CONTACT */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    header {
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+        padding-top: 100px;
+    }
+
+    .connexion {
+        padding: 30px;
+    }
+}
+/* ---------------------------------------- */

@@ -3,16 +3,16 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
 class ConnexionController extends AbstractController
 {
-    #[Route('/connexion', name: 'app_connexion')]
-    public function index(): Response
+    #[Route('/connexion', name: 'connexion')]
+
+    public function index(Request $request): Response
     {
-        return $this->render('connexion/index.html.twig', [
-            'controller_name' => 'ConnexionController',
-        ]);
+        return $this->render('connexion/connexion.twig');
     }
 }

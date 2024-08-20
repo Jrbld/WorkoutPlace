@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('contact') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('contact') }}
+{% endblock %}
+
+{% block title %}Workout Place | Contact{% endblock %}
+
+{% block body %}
+
+<header style="background-image:url('{{ asset('build/images/contact.jpg') }}')">
+    <p>CONTACT</p>
+</header>
+
+<section class="contact">
+    <p class="contact-intro">
+        Vous avez une question à nous poser ou une remarque dont vous voulez nous faire part ?<br>
+        Contactez-nous grâce au formulaire ci-dessous, laissez votre message et nous y répondrons au plus vite.<br>
+        Vous trouverez également nos différentes coordonnées et horaires en bas de page.
+    </p>
+</section>
+
+{% endblock %}

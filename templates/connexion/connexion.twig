@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('connexion') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('connexion') }}
+{% endblock %}
+
+{% block title %}Workout Place | Connexion{% endblock %}
+
+{% block body %}
+
+<header style="background-image:url('{{ asset('build/images/connexion.jpg') }}')">
+    <p>CONNEXION</p>
+</header>
+
+<section class="connexion">
+
+</section>
+
+{% endblock %}
