@@ -22,6 +22,30 @@
         Contactez-nous grâce au formulaire ci-dessous, laissez votre message et nous y répondrons au plus vite.<br>
         Vous trouverez également nos différentes coordonnées et horaires en bas de page.
     </p>
+
+    <div class="contact-form">
+        {% if app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ app.flashes('success')[0] }}
+            </div>
+        {% endif %}
+
+        {{ form_start(form) }}
+            <div class="email-form">
+                {{ form_row(form.email, {'attr': {'size': '30'}}) }}
+            </div>
+            <div class="subject-form">
+                {{ form_row(form.subject, {'attr': {'size': '30'}}) }}
+            </div>
+            <div class="message-form">
+                {{ form_row(form.message, {'attr': {'size': '10'}}) }}
+            </div>
+            <div class="button-form">
+                {{ form_row(form.submit) }}
+            </div>
+        {{ form_end(form) }}
+    </div>
+
     <div class="contact-infos">
         <h3>NOUS TROUVER</h3>
         <p>
@@ -33,7 +57,7 @@
         <p>
             03.80.23.23.23
             <br>
-            contact-wp@gmail.com
+            contact.workoutplace@gmail.com
         </p>
         <h3>HORAIRES</h3>
         <p>

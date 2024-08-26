@@ -19,6 +19,12 @@ header {
     width: 100%;
     height: auto;
 }
+
+.button-form button:hover {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
 /* ---------------------------------------- */
 
 
@@ -52,6 +58,49 @@ header {
     .contact-intro {
         text-align: center;
         margin-bottom: 30px;
+    }
+
+    .contact-form {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        background-color: #D95D37;
+        border-radius: 15px;
+        margin-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+    }
+
+    .email-form, .subject-form, .message-form {
+        padding-bottom: 30px;
+    }
+
+    .button-form button {
+        background-color: white;
+        color: #D95D37;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .button-form button:active {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
     }
 
     .contact-infos {
