@@ -25,6 +25,11 @@ header {
     color: white;
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
 }
+
+.alert {
+    background-color: white;
+    color: #D95D37;
+}
 /* ---------------------------------------- */
 
 
@@ -78,10 +83,7 @@ header {
         font-weight: bold;
         font-style: italic;
         color: white;
-    }
-
-    .email-form, .subject-form, .message-form {
-        padding-bottom: 30px;
+        overflow: auto;
     }
 
     .button-form button {

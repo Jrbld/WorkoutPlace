@@ -19,6 +19,12 @@ header {
     width: 100%;
     height: auto;
 }
+
+.account-button:hover {
+    background-color: #D95D37;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
 /* ---------------------------------------- */
 
 
@@ -47,6 +53,50 @@ header {
 
     .connexion {
         padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .connexion-form {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        background-color: #D95D37;
+        border-radius: 15px;
+        margin-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+        overflow: auto;
+    }
+
+    .account-button {
+        text-decoration: none;
+        background-color: #212121;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+    }
+
+    .account-button:active {
+        background-color: #D95D37;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
     }
 }
 /* ---------------------------------------- */

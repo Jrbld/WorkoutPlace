@@ -24,25 +24,21 @@
     </p>
 
     <div class="contact-form">
-        {% if app.flashes('success') %}
-            <div class="alert alert-success">
-                {{ app.flashes('success')[0] }}
-            </div>
-        {% endif %}
+        <div class="success-message">
+            {% for message in app.flashes('success') %}
+                <div class="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
 
+        {# {{ form(form) }} #}
         {{ form_start(form) }}
-            <div class="email-form">
-                {{ form_row(form.email, {'attr': {'size': '30'}}) }}
-            </div>
-            <div class="subject-form">
-                {{ form_row(form.subject, {'attr': {'size': '30'}}) }}
-            </div>
-            <div class="message-form">
-                {{ form_row(form.message, {'attr': {'size': '10'}}) }}
-            </div>
-            <div class="button-form">
-                {{ form_row(form.submit) }}
-            </div>
+            {{ form_row(form.email) }}
+            {{ form_row(form.subject) }}
+            {{ form_row(form.message) }}
+            <br>
+            <div class="button-form">{{ form_row(form.submit) }}</div>
         {{ form_end(form) }}
     </div>
 

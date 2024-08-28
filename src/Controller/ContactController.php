@@ -4,31 +4,39 @@ namespace App\Controller;
 
 use App\Entity\Contact;
 use App\Form\ContactType;
+use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Mailer\MailerInterface;
-use Symfony\Component\Mime\Email;
 
 class ContactController extends AbstractController
 {
     #[Route('/contact', name: 'contact')]
 
-    public function contact(Request $request, MailerInterface $mailer): Response
+    public function index(Request $request, EntityManagerInterface $manager, MailerInterface $mailer): Response
     {
         $contact = new Contact();
         $form = $this->createForm(ContactType::class, $contact);
 
         $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()){
+            $contact = $form->getData();
 
-        if($form->isSubmitted() && $form->isValid()){
-            // Envoi du mail
-            $email = (new Email())
+            $manager->persist($contact);
+            $manager->flush();
+
+            // Email
+            $email = (new TemplatedEmail())
                 ->from($contact->getEmail())
                 ->to('contact.workoutplace@gmail.com')
                 ->subject($contact->getSubject())
-                ->text($contact->getMessage());
+                ->htmlTemplate('mail/mail.twig')
+                ->context([
+                    'contact' => $contact
+                ]);
 
             $mailer->send($email);
 
@@ -38,7 +46,7 @@ class ContactController extends AbstractController
         }
 
         return $this->render('contact/contact.twig', [
-            'form' => $form->createView(),
+            'form' => $form->createView()
         ]);
     }
 }
