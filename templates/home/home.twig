@@ -14,6 +14,10 @@
 
 <header style="background-image: url('{{ asset('build/images/home-header.jpg') }}');"></header>
 
+<div class="desktop-header" style="background-image: url('{{ asset('build/images/header.jpg') }}');">
+    <p><img src="{{ asset('build/images/WP-light-complete-logo.png') }}" alt="Logo WP"></p>
+</div>
+
 <section class="choose">
     <h1>POURQUOI NOUS CHOISIR ?</h1>
     <p id="choose-presentation">
@@ -58,8 +62,45 @@
                 pour les exercices que vous voulez !
             </p>
         </div>
-        <a id="subscribe-button" href="{{ url('subscribe') }}">NOS ABONNEMENTS</a>
     </div>
+    <div id="desktop-choose-card-1" style="background-image: url('{{ asset('build/images/dcc1.jpg') }}');">
+        <div id="desktop-title-1">
+            <img src="{{ asset('build/images/clock.png') }}" alt="Clock icon">
+            <h2>OUVERT 24H/24 - 7J/7</h2>
+        </div>
+        <p>
+            Venez vous entraîner à l'heure
+            que vous souhaitez !
+            L'accueil est ouvert tous les jours
+            de 8h à 18h.
+        </p>
+    </div>
+    <div id="desktop-choose-card-2" style="background-image: url('{{ asset('build/images/dcc2.jpg') }}');">
+        <div id="desktop-title-2">
+            <img src="{{ asset('build/images/dumbbell.png') }}" alt="Dumbbell icon">
+            <h2>MATÉRIEL DERNIER CRI</h2>
+        </div>
+        <p>
+            Toutes nos machines sont les plus récentes,
+            elles ont été choisies et testées
+            pour vous permettre de progresser.
+            N'hésitez pas à toutes les essayer !
+        </p>
+    </div>
+    <div id="desktop-choose-card-3" style="background-image: url('{{ asset('build/images/dcc3.jpg') }}');">
+        <div id="desktop-title-3">
+            <img src="{{ asset('build/images/gym.png') }}" alt="Gym icon">
+            <h2>SALLE DE 10 000 M²</h2>
+        </div>
+        <p>
+            Bienvenue dans la plus grande
+            salle de sport de France !
+            Vous trouverez tout ce dont vous avez besoin,
+            pour les exercices que vous voulez !
+        </p>
+    </div>
+</div>
+    <a id="subscribe-button" href="{{ url('subscribe') }}">NOS ABONNEMENTS</a>
 </section>
 
 <section class="spaces">
