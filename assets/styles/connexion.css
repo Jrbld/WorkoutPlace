@@ -19,13 +19,37 @@ header {
     width: 100%;
     height: auto;
 }
+
+.connexion-form button:hover {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.account-button:hover {
+    background-color: #D95D37;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.reconnexion-button:active {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.home-button:active {
+    background-color: #D95D37;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+}
 /* ---------------------------------------- */
 
 
 
 
 /* ---------------------------------------- */
-/* "MOBILE" CONTACT */
+/* "MOBILE" CONNEXION */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
     header {
@@ -47,6 +71,150 @@ header {
 
     .connexion {
         padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .connexion-form {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        background-color: #D95D37;
+        border-radius: 15px;
+        margin-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+        overflow: auto;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .connexion-form button {
+        background-color: white;
+        color: #D95D37;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .connexion-form button:active {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    .account-button {
+        text-decoration: none;
+        background-color: #212121;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+    }
+
+    .account-button:active {
+        background-color: #D95D37;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
     }
 }
 /* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* PAGE DECONNEXION */
+/* ---------------------------------------- */
+.deconnexion {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" DECONNEXION */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+    .deconnexion {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .deconnexion h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .reconnexion-button {
+        text-decoration: none;
+        background-color: #D95D37;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    .reconnexion-button:active {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    .home-button {
+        text-decoration: none;
+        background-color: #212121;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 10px;
+    }
+
+    .home-button:active {
+        background-color: #D95D37;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}

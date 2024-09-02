@@ -298,16 +298,19 @@ header {
     .news-content-title {
         background-color: #D95D37;
         width: 100%;
-        padding: 8px 16px;
+        height: auto;
         border-radius: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 30px; 
+    }
 
+    .news-content-title p {
         color: white;
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
         font-weight: bold;
         font-style: italic;
-        text-align: center; 
+        text-align: center;
+        padding: 8px 0;
     }
 
     .playlist {

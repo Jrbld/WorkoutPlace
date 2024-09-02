@@ -28,6 +28,8 @@ Encore
     .addEntry('news', './assets/news.js')
     .addEntry('space', './assets/space.js')
     .addEntry('subscribe', './assets/subscribe.js')
+    .addEntry('account', './assets/account.js')
+    .addEntry('createAccount', './assets/createAccount.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

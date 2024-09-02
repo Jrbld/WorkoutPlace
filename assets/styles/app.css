@@ -143,33 +143,146 @@ body {
 
 
 /* -------------------------------------------------------- */
+/* "DESKTOP" NAVBAR */
+/* -------------------------------------------------------- */
+@media screen and (min-width: 970px) and (max-width: 1440px) {
+    .navbar {
+        padding: 50px;
+    }
+
+    #navbar-logo img {
+        height: 40px;
+        width: auto;
+    }
+
+    .burger {
+        display: none;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .menu a {
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 30px;
+        transition: 0.5s;
+    }
+
+    .menu a:hover {
+        color: #D95D37;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 969px) {
+    .navbar {
+        padding: 50px;
+    }
+
+    #navbar-logo img {
+        height: 40px;
+        width: auto;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #D95D37;
+        cursor: pointer;
+        border: none;
+        border-radius: 15px;
+    }
+    
+    .burger .bar, .burger::after, .burger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 4px;
+        background-color: white;
+        margin: 3px 10px;
+        border-radius: 5px;
+        transition: 0.4s;
+    }
+    
+    .burger.is-active::before {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    
+    .burger.is-active::after {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+    
+    .burger.is-active .bar {
+        opacity: 0;
+    }
+    
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        top: 100px;
+        left: 100%;
+        width: 100%;
+        height: auto;
+        background-color: #D95D37;
+        transition: 0.4s;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+    
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 24px;
+        color: white;
+    }
+
+    .mobile-nav a:hover {
+        background-color: white;
+        color: #D95D37;
+    }
+    
+    .mobile-nav a:active {
+        background-color: white;
+        color: #D95D37;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------- */
 /* FOOTER */
 /* -------------------------------------------------------- */
 footer {
     background-color: #212121;
     width: 100%;
-    height: 150px;
+    height: 100px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-links a:hover{
-    color: #D95D37;
 }
 
 .footer-icon {
@@ -190,30 +303,62 @@ footer {
     footer {
         padding: 30px;
     }
-    
-    .footer-links a:active{
-        color: #D95D37;
-    }
 
-    .footer-icon .social-media a img {
+    .footer-icon a img {
         width: 30px;
         height: auto;
-    }
-    
-    .footer-icon .social-media a img {
         margin: 0 3px;
     }
     
-    .footer-icon #wp-footer-logo img {
+    #wp-footer-logo img {
         height: 30px;
         width: auto;
         margin-left: 30px;
     }
+}
+/* -------------------------------------------------------- */
 
-    .footer-links span {
-        border: 1px solid white;
-        display: inline-block;
+
+
+
+/* -------------------------------------------------------- */
+/* "DESKTOP" FOOTER */
+/* -------------------------------------------------------- */
+@media screen and (min-width: 500px) and (max-width: 1440px) {
+    footer {
+        width: 100%;
+        height: 80px;
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-icon a img {
+        width: 30px;
+        height: auto;
+        margin: 0 10px;
+    }
+
+    .footer-icon {
+        margin-right: 100px;
+    }
+    
+    #wp-footer-logo img {
         height: 30px;
-        margin: 0 30px;
+        width: auto;
+        margin-left: 100px;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 650px) {
+    .footer-icon {
+        margin-right: 25px;
+    }
+
+    #wp-footer-logo img {
+        margin-left: 25px;
+    }
+}
+/* -------------------------------------------------------- */
