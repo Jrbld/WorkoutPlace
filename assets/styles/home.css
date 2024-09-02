@@ -29,6 +29,66 @@ header {
     header {
         height: 250px;
     }
+
+    .desktop-header {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 499px) {
+    .desktop-header {
+        display: none;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" HEADER */
+/* ---------------------------------------- */
+@media screen and (min-width: 500px) and (max-width: 1440px) {
+    header {
+        display: none;
+    }
+
+    .desktop-header {
+        width: 100%;
+        margin-top: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+    }
+
+    .desktop-header p img {
+        width: 500px;
+        height: auto;
+    }
+
+    .desktop-header p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 200px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 969px) {
+    .desktop-header {
+        height: 400px;
+    }
+    
+    .desktop-header p img {
+        width: 350px;
+        height: auto;
+    }
+
+    .desktop-header p {
+        padding-top: 150px;
+    }
 }
 /* ---------------------------------------- */
 
@@ -58,6 +118,10 @@ header {
 @media screen and (min-width: 340px) and (max-width: 480px) {
     .choose {
         padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .choose h1 {
@@ -129,6 +193,119 @@ header {
         font-style: italic;
         text-align: center;
         padding: 8px 16px;
+        border-radius: 10px;
+    }
+
+    #subscribe-button:active {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    #desktop-choose-card-1, #desktop-choose-card-2, #desktop-choose-card-3 {
+        display: none;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" CHOOSE */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+    .choose {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .choose h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #choose-presentation {
+        text-align: center;
+        color: black;
+    }
+
+    .choose-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    #choose-card-1, #choose-card-2, #choose-card-3 {
+        display: none;
+    }
+
+    #desktop-choose-card-1, #desktop-choose-card-2, #desktop-choose-card-3 {
+        width: 100%;
+        height: 250px;
+        background-color: #212121;
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 50px;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #desktop-choose-card-1 p, #desktop-choose-card-2 p, #desktop-choose-card-3 p {
+        color: white;
+        text-align: center;
+    }
+
+    #desktop-title-1, #desktop-title-2, #desktop-title-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        color: white;
+    }
+
+    #desktop-title-1 img, #desktop-title-2 img, #desktop-title-3 img {
+        width: 40px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    #desktop-title-1 h2, #desktop-title-2 h2, #desktop-title-3 h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    #subscribe-button {
+        text-decoration: none;
+        background-color: #D95D37;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 10px 30px;
         border-radius: 10px;
     }
 
