@@ -19,7 +19,19 @@
 <section class="connexion">
     
     <div class="connexion-form">
-
+        <form action="{{ path('connexion') }}" method="post">
+            <div class="form-group">
+                <label for="username" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="username" name="_username" placeholder="exemple@mail.fr">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password" class="form-label mt-4">MOT DE PASSE</label>
+                <input type="password" class="form-control" id="password" name="_password" placeholder="********">
+            </div>
+            <br>
+            <button type="submit">SE CONNECTER</button>
+        </form>
     </div>
 
     <a class="account-button" href="{{ url('createAccount') }}">CRÉER UN COMPTE</a>

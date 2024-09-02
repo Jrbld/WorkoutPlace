@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('connexion') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('connexion') }}
+{% endblock %}
+
+{% block title %}Workout Place | Déconnexion{% endblock %}
+
+{% block body %}
+
+<section class="deconnexion">
+    
+    <h1>VOUS ÊTES BIEN DÉCONNECTÉ(E)</h1>
+
+    <a class="reconnexion-button" href="{{ url('connexion') }}">SE CONNECTER</a>
+    <a class="home-button" href="{{ url('home') }}">REVENIR À L'ACCUEIL</a>
+
+</section>
+
+{% endblock %}
