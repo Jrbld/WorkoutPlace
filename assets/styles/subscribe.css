@@ -74,6 +74,89 @@
 
 
 /* ---------------------------------------- */
+/* "DESKTOP" ABONNEMENTS */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+    .subscriptions {
+        padding: 50px;
+    }
+
+    .subscriptions h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .subscriptions-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #subscription-1, #subscription-2, #subscription-3 {
+        width: 100%;
+        height: auto;
+        background-color: #212121;
+        padding: 30px;
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #subscription-2 {
+        margin: 0 30px;
+    }
+
+    #subscription-1 h2, #subscription-2 h2, #subscription-3 h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #subscription-1 p, #subscription-2 p, #subscription-3 p {
+        color: white;
+        text-align: center;
+    }
+
+    .white-title {
+        color: white;
+    }
+
+    .orange-title {
+        color: #D95D37;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 790px) {
+    .subscriptions-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #subscription-2 {
+        margin: 30px 0;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
 /* SECTION OFFRES */
 /* ---------------------------------------- */
 .offers {
@@ -201,6 +284,143 @@
 
 
 /* ---------------------------------------- */
+/* "DESKTOP" OFFRES */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+    .offers {
+        padding: 50px;
+    }
+
+    .offers h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 50px;
+        color: white;
+    }
+
+    .offers-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #family {
+        margin-bottom: 30px;
+    }
+
+    #family h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+        color: white;
+    }
+
+    .horizontale-line {
+        border: 1px solid white;
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #family-presentation {
+        color: white;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .family-offers {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: left;
+    }
+
+    .family-white-p {
+        color: white;
+    }
+
+    .family-orange-p {
+        color: #D95D37;
+    }
+
+    #family-justify {
+        color: white;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    #student h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: right;
+        color: white;
+    }
+
+    .horizontale-line {
+        border: 1px solid white;
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #student-presentation {
+        color: white;
+        text-align: right;
+        margin-bottom: 15px;
+    }
+
+    .student-offers {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: right;
+    }
+
+    .student-white-p {
+        color: white;
+    }
+
+    .student-orange-p {
+        color: #D95D37;
+    }
+
+    #student-justify {
+        color: white;
+        text-align: right;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+    .offers-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #family {
+        margin-bottom: 50px;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
 /* "MOBILE" ESSAI */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
@@ -231,6 +451,36 @@
 
 
 /* ---------------------------------------- */
+/* "DESKTOP" ESSAI */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+    .try {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #try-text {
+        text-align: center;
+        color: white;
+        padding-top: 200px;
+    }
+
+    #try-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
 /* "MOBILE" LÉGENDE */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
@@ -244,6 +494,31 @@
     .legend p {
         font-family: 'Oswald', sans-serif;
         font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" LÉGENDE */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+    .legend {
+        width: 100%;
+        height: auto;
+        background-color: #D95D37;
+        padding: 50px;
+    }
+
+    .legend p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
         font-weight: bold;
         font-style: italic;
         text-align: center;
