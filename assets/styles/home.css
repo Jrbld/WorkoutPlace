@@ -149,10 +149,13 @@ header {
     #choose-card-1, #choose-card-2, #choose-card-3 {
         width: 100%;
         height: auto;
-        background-color: #212121;
         border-radius: 15px;
         margin-bottom: 30px;
         padding: 30px;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     #choose-card-1 p, #choose-card-2 p, #choose-card-3 p {
@@ -201,10 +204,6 @@ header {
         color: white;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
     }
-
-    #desktop-choose-card-1, #desktop-choose-card-2, #desktop-choose-card-3 {
-        display: none;
-    }
 }
 /* ---------------------------------------- */
 
@@ -229,12 +228,13 @@ header {
         font-weight: bold;
         font-style: italic;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     #choose-presentation {
         text-align: center;
         color: black;
+        margin-bottom: 50px;
     }
 
     .choose-cards {
@@ -247,16 +247,11 @@ header {
     }
 
     #choose-card-1, #choose-card-2, #choose-card-3 {
-        display: none;
-    }
-
-    #desktop-choose-card-1, #desktop-choose-card-2, #desktop-choose-card-3 {
         width: 100%;
         height: 250px;
         background-color: #212121;
         border-radius: 15px;
         padding: 30px;
-        margin-bottom: 50px;
 
         background-size: cover;
         background-repeat: no-repeat;
@@ -268,12 +263,16 @@ header {
         align-items: center;
     }
 
-    #desktop-choose-card-1 p, #desktop-choose-card-2 p, #desktop-choose-card-3 p {
+    #choose-card-1, #choose-card-2 {
+        margin-bottom: 50px;
+    }
+
+    #choose-card-1 p, #choose-card-2 p, #choose-card-3 p {
         color: white;
         text-align: center;
     }
 
-    #desktop-title-1, #desktop-title-2, #desktop-title-3 {
+    #title-1, #title-2, #title-3 {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -282,13 +281,13 @@ header {
         color: white;
     }
 
-    #desktop-title-1 img, #desktop-title-2 img, #desktop-title-3 img {
+    #title-1 img, #title-2 img, #title-3 img {
         width: 40px;
         height: auto;
         margin-right: 20px;
     }
 
-    #desktop-title-1 h2, #desktop-title-2 h2, #desktop-title-3 h2 {
+    #title-1 h2, #title-2 h2, #title-3 h2 {
         font-family: 'Oswald', sans-serif;
         font-size: 24px;
         font-weight: bold;
@@ -309,7 +308,7 @@ header {
         border-radius: 10px;
     }
 
-    #subscribe-button:active {
+    #subscribe-button:hover {
         background-color: #212121;
         color: white;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
@@ -352,6 +351,10 @@ header {
 @media screen and (min-width: 340px) and (max-width: 480px) {
     .spaces {
         padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .spaces h1 {
@@ -369,6 +372,7 @@ header {
     }
 
     .spaces-cards {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -429,6 +433,110 @@ header {
         background-color: #212121;
         color: white;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" SPACES */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+    .spaces {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .spaces h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .spaces p {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .spaces-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #space-card-1, #space-card-2, #space-card-3 {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+
+    #space-card-2 {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    #space-card-1:hover, #space-card-2:hover, #space-card-3:hover {
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    #space-card-1 a, #space-card-2 a, #space-card-3 a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+
+        font-family: 'Oswald', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+
+        text-decoration: none;
+    }
+
+    #spaces-button {
+        text-decoration: none;
+        background-color: white;
+        color: #D95D37;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+
+    #spaces-button:hover {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 790px) {
+    .spaces-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 /* ---------------------------------------- */
@@ -532,6 +640,110 @@ header {
         background-color: white;
         color: #D95D37;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" COACH */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+    .coach {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .coach h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    #coach-presentation {
+        text-align: center;
+        margin-bottom: 50px;
+        color: white;
+    }
+
+    #coach-photo {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 23%;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+
+    .lessons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
+    #pilates, #body {
+        margin-right: 30px;
+    }
+
+    #pilates h2, #body h2, #hiit h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+    }
+
+    #pilates span, #body span, #hiit span {
+        border: 1px solid white;
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #coach-button {
+        text-decoration: none;
+        background-color: #D95D37;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+
+    #coach-button:hover {
+        background-color: white;
+        color: #D95D37;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 790px) {
+    .lessons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    #pilates, #body {
+        margin: 0 0 30px 0;
     }
 }
 /* ---------------------------------------- */
@@ -644,6 +856,137 @@ header {
         background-color: #212121;
         color: white;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" NEWS */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+    .news {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .news h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #news-presentation {
+        text-align: center;
+        margin-bottom: 50px;
+        color: black;
+    }
+
+    .news-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .news-cards a {
+        text-decoration: none;
+    }
+
+    #news-card-1, #news-card-2, #news-card-3 {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+
+    #news-card-2 {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    #news-card-1:hover, #news-card-2:hover, #news-card-3:hover {
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    #news-card-1 a, #news-card-2 a, #news-card-3 a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 20px;
+
+        font-family: 'Oswald', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+    }
+
+    #news-button {
+        text-decoration: none;
+        background-color: #D95D37;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+
+    #news-button:active {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media screen and (min-width: 1111px) and (max-width: 1161px) {
+    #news-card-3 a {
+        padding: 80px 20px;
+    }
+}
+
+@media screen and (min-width: 1111px) and (max-width: 1120px) {
+    #news-card-1 a {
+        padding: 80px 20px;
+    }
+}
+
+@media screen and (min-width: 1111px) and (max-width: 1123px) {
+    #news-card-2 a {
+        padding: 80px 20px;
+    }
+}
+
+@media screen and (min-width: 791px) and (max-width: 1110px) {
+    #news-card-1 a, #news-card-2 a, #news-card-3 a {
+        padding: 80px 20px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 790px) {
+    .news-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 /* ---------------------------------------- */

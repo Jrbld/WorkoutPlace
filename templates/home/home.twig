@@ -8,7 +8,7 @@
     {{ encore_entry_script_tags('home') }}
 {% endblock %}
 
-{% block title %}Workout Place | Accueil{% endblock %}
+{% block title %}WP | Accueil{% endblock %}
 
 {% block body %}
 
@@ -26,7 +26,7 @@
     </p>
 
     <div class="choose-cards">
-        <div id="choose-card-1">
+        <div id="choose-card-1" style="background-image: url('{{ asset('build/images/dcc1.jpg') }}');">
             <div id="title-1">
                 <img src="{{ asset('build/images/clock.png') }}" alt="Clock icon">
                 <h2>OUVERT 24H/24 - 7J/7</h2>
@@ -38,7 +38,7 @@
                 de 8h à 18h.
             </p>
         </div>
-        <div id="choose-card-2">
+        <div id="choose-card-2" style="background-image: url('{{ asset('build/images/dcc2.jpg') }}');">
             <div id="title-2">
                 <img src="{{ asset('build/images/dumbbell.png') }}" alt="Dumbbell icon">
                 <h2>MATÉRIEL DERNIER CRI</h2>
@@ -50,7 +50,7 @@
                 N'hésitez pas à toutes les essayer !
             </p>
         </div>
-        <div id="choose-card-3">
+        <div id="choose-card-3" style="background-image: url('{{ asset('build/images/dcc3.jpg') }}');">
             <div id="title-3">
                 <img src="{{ asset('build/images/gym.png') }}" alt="Gym icon">
                 <h2>SALLE DE 10 000 M²</h2>
@@ -63,43 +63,6 @@
             </p>
         </div>
     </div>
-    <div id="desktop-choose-card-1" style="background-image: url('{{ asset('build/images/dcc1.jpg') }}');">
-        <div id="desktop-title-1">
-            <img src="{{ asset('build/images/clock.png') }}" alt="Clock icon">
-            <h2>OUVERT 24H/24 - 7J/7</h2>
-        </div>
-        <p>
-            Venez vous entraîner à l'heure
-            que vous souhaitez !
-            L'accueil est ouvert tous les jours
-            de 8h à 18h.
-        </p>
-    </div>
-    <div id="desktop-choose-card-2" style="background-image: url('{{ asset('build/images/dcc2.jpg') }}');">
-        <div id="desktop-title-2">
-            <img src="{{ asset('build/images/dumbbell.png') }}" alt="Dumbbell icon">
-            <h2>MATÉRIEL DERNIER CRI</h2>
-        </div>
-        <p>
-            Toutes nos machines sont les plus récentes,
-            elles ont été choisies et testées
-            pour vous permettre de progresser.
-            N'hésitez pas à toutes les essayer !
-        </p>
-    </div>
-    <div id="desktop-choose-card-3" style="background-image: url('{{ asset('build/images/dcc3.jpg') }}');">
-        <div id="desktop-title-3">
-            <img src="{{ asset('build/images/gym.png') }}" alt="Gym icon">
-            <h2>SALLE DE 10 000 M²</h2>
-        </div>
-        <p>
-            Bienvenue dans la plus grande
-            salle de sport de France !
-            Vous trouverez tout ce dont vous avez besoin,
-            pour les exercices que vous voulez !
-        </p>
-    </div>
-</div>
     <a id="subscribe-button" href="{{ url('subscribe') }}">NOS ABONNEMENTS</a>
 </section>
 
@@ -112,17 +75,17 @@
     </p>
 
     <div class="spaces-cards">
-            <div id="space-card-1" style="background-image: url('{{ asset('build/images/fitness.jpg') }}');">
-                <a href="{{ path('space.show', {slug: 'musculation'}) }}">MUSCULATION</a>
+        <div id="space-card-1" style="background-image: url('{{ asset('build/images/fitness.jpg') }}');">
+            <a href="{{ path('space.show', {slug: 'musculation'}) }}">MUSCULATION</a>
             </div>
-            <div id="space-card-2" style="background-image: url('{{ asset('build/images/crossfit.jpg') }}');">
-                <a href="{{ path('space.show', {slug: 'crossfit'}) }}">CROSSFIT</a>
-            </div>
-            <div id="space-card-3" style="background-image: url('{{ asset('build/images/sauna.jpg') }}');">
-                <a href="{{ path('space.show', {slug: 'sauna'}) }}">SAUNA/DÉTENTE</a>
-            </div>
-        <a id="spaces-button" href="{{ url('space') }}">TOUS NOS ESPACES</a>
+        <div id="space-card-2" style="background-image: url('{{ asset('build/images/crossfit.jpg') }}');">
+            <a href="{{ path('space.show', {slug: 'crossfit'}) }}">CROSSFIT</a>
+        </div>
+        <div id="space-card-3" style="background-image: url('{{ asset('build/images/sauna.jpg') }}');">
+            <a href="{{ path('space.show', {slug: 'sauna'}) }}">SAUNA/DÉTENTE</a>
+        </div>
     </div>
+    <a id="spaces-button" href="{{ url('space') }}">TOUS NOS ESPACES</a>
 </section>
 
 <section class="coach">
@@ -136,32 +99,34 @@
 
     <div id="coach-photo" style="background-image: url('{{ asset('build/images/team.jpg') }}');"></div>
 
-    <div id="pilates">
-        <h2>PILATES</h2>
-        <span></span>
-        <p>
-            Le Pilates est une méthode d'entraînement qui allie
-            renforcement musculaire, alignement postural et respiration contrôlée, et qui s'adresse à tous.
-        </p>
-    </div>
+    <div class="lessons">
+        <div id="pilates">
+            <h2>PILATES</h2>
+            <span></span>
+            <p>
+                Le Pilates est une méthode d'entraînement qui allie
+                renforcement musculaire, alignement postural et respiration contrôlée, et qui s'adresse à tous.
+            </p>
+        </div>
 
-    <div id="body">
-        <h2>BODY ATTACK</h2>
-        <span></span>
-        <p>
-            Le Body Attack est un programme de fitness énergique
-            qui combine des mouvements athlétiques, tels que la course et les sauts, avec des exercices de renforcement.
-        </p>
-    </div>
+        <div id="body">
+            <h2>BODY ATTACK</h2>
+            <span></span>
+            <p>
+                Le Body Attack est un programme de fitness énergique
+                qui combine des mouvements athlétiques, tels que la course et les sauts, avec des exercices de renforcement.
+            </p>
+        </div>
 
-    <div id="hiit">
-        <h2>HIIT STEP</h2>
-        <span></span>
-        <p>
-            Le HIITSTEP est un entraînement en intervalles
-            de haute intensité qui utilise une plateforme d'escalier
-            pour des exercices dynamiques.
-        </p>
+        <div id="hiit">
+            <h2>HIIT STEP</h2>
+            <span></span>
+            <p>
+                Le HIITSTEP est un entraînement en intervalles
+                de haute intensité qui utilise une plateforme d'escalier
+                pour des exercices dynamiques.
+            </p>
+        </div>
     </div>
 
     <a id="coach-button" href="{{ url('lesson') }}">NOS DIFFÉRENTS COURS</a>
@@ -186,8 +151,8 @@
         <div id="news-card-3" style="background-image: url('{{ asset('build/images/poke.jpg') }}');">
             <a href="{{ path('news.show', {slug: 'poke'}) }}">LE POKÉ HYPER PROTÉINÉ</a>
         </div>
+    </div>
     <a id="news-button" href="{{ url('news') }}">LES DERNIÈRES NOUVEAUTÉS</a>
-</div>
 </section>
 
 {% endblock %}
