@@ -305,12 +305,12 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
     }
 
     #family {
-        margin-bottom: 30px;
+        margin-right: 25px;
     }
 
     #family h2 {
@@ -357,12 +357,16 @@
         margin-top: 15px;
     }
 
+    #student {
+        margin-left: 25px;
+    }
+
     #student h2 {
         font-family: 'Oswald', sans-serif;
         font-size: 24px;
         font-weight: bold;
         font-style: italic;
-        text-align: right;
+        text-align: left;
         color: white;
     }
 
@@ -375,7 +379,7 @@
 
     #student-presentation {
         color: white;
-        text-align: right;
+        text-align: left;
         margin-bottom: 15px;
     }
 
@@ -384,7 +388,7 @@
         font-size: 16px;
         font-weight: bold;
         font-style: italic;
-        text-align: right;
+        text-align: left;
     }
 
     .student-white-p {
@@ -397,7 +401,7 @@
 
     #student-justify {
         color: white;
-        text-align: right;
+        text-align: left;
         margin-top: 15px;
     }
 }
@@ -412,7 +416,12 @@
     }
     
     #family {
+        margin-right: 0;
         margin-bottom: 50px;
+    }
+
+    #student {
+        margin-left: 0;
     }
 }
 /* ---------------------------------------- */

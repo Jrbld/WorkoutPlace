@@ -130,6 +130,7 @@ body {
     .mobile-nav a:hover {
         background-color: white;
         color: #D95D37;
+        transition: 0.5s;
     }
     
     .mobile-nav a:active {
@@ -178,6 +179,7 @@ body {
 
     .menu a:hover {
         color: #D95D37;
+        transition: 0.5s;
     }
 }
 
@@ -259,6 +261,7 @@ body {
     .mobile-nav a:hover {
         background-color: white;
         color: #D95D37;
+        transition: 0.5s;
     }
     
     .mobile-nav a:active {

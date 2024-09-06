@@ -18,6 +18,7 @@
 
 .basic:hover {
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 /* ---------------------------------------- */
 
@@ -138,6 +139,7 @@
 
     .basic:hover {
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
     }
 }
 /* ---------------------------------------- */
@@ -156,6 +158,7 @@
 
 .premium:hover {
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 /* ---------------------------------------- */
 
@@ -298,6 +301,7 @@
 
     .premium:hover {
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
     }
 }
 /* ---------------------------------------- */
@@ -317,6 +321,7 @@ header {
     background-color: white;
     color: #D95D37;
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 /* ---------------------------------------- */
 
@@ -571,9 +576,13 @@ header {
         margin-bottom: 50px;
     }
 
-    .first {
-        margin-bottom: 50px;
+    .date {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
     }
+
 
     .first h2 {
         font-family: 'Oswald', sans-serif;
@@ -604,7 +613,7 @@ header {
         font-size: 28px;
         font-weight: bold;
         font-style: italic;
-        text-align: right;
+        text-align: left;
     }
 
     .second-time {
@@ -612,8 +621,16 @@ header {
         font-size: 28px;
         font-weight: bold;
         font-style: italic;
-        text-align: right;
+        text-align: left;
         color: #D95D37;
+    }
+
+    .first {
+        margin-right: 50px;
+    }
+
+    .second {
+        margin-left: 50px;
     }
 
     .others {
@@ -694,6 +711,7 @@ header {
         background-color: white;
         color: #D95D37;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
     }
 }
 
@@ -718,6 +736,24 @@ header {
 
     .second-line-coach .coach-head:not(:last-child) {
         margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 834px) {
+    .date {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .first {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .second {
+        margin-left: -80px;
     }
 }
 /* ---------------------------------------- */
