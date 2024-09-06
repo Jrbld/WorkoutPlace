@@ -18,6 +18,7 @@
 
 .news-image:hover {
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 /* ---------------------------------------- */
 
@@ -178,6 +179,7 @@
 
     .news-image:hover {
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
     }
 
     .news-image a {
@@ -220,12 +222,14 @@ header {
     background-color: #212121;
     color: white;
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 
 .links a:last-child:hover {
     background-color: white;
     color: #D95D37;
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 /* ---------------------------------------- */
 
@@ -466,6 +470,330 @@ header {
         font-family: 'Oswald', sans-serif;
         font-weight: bold;
         font-style: italic;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" PAGE PAR NEWS */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 1440px) {
+    header {
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header .one-line-header {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+        padding-top: 200px;
+    }
+
+    header .two-lines-header {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+        padding-top: 180px;
+    }
+
+    .news-content {
+        width: 100%;
+        height: auto;
+        padding: 50px;
+    }
+
+    .news-presentation {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .days {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .day-1-content {
+        margin-right: 50px;
+    }
+
+    .day-2-content {
+        margin-left: 50px;
+    }
+
+    .day {
+        margin-bottom: 10px;
+    }
+
+    .day h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .horizontale-line {
+        border: 1px solid black;
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .series {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .exercices {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .exercices-perte-poids {
+        text-align: center;
+    }
+
+    .links {
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        background-color: #D95D37;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .links a:not(:last-child) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .links a:last-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .links a:not(:last-child) {
+        background-color: white;
+        width: 100%;
+        padding: 10px 30px;
+        border-radius: 10px;
+
+        color: #D95D37;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;      
+    }
+
+    .links a:last-child {
+        background-color: #212121;
+        width: 100%;
+        padding: 10px 30px;
+        border-radius: 10px;
+
+        color: white;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;        
+    }
+
+    .links a img {
+        width: 30px;
+    }
+
+    .links a:not(:last-child) img {
+        margin-left: auto;
+    }
+
+    .links a:last-child img {
+        rotate: 180deg;
+        margin-right: auto;
+    }
+
+    .links a:not(:last-child):hover {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
+    }
+
+    .links a:last-child:hover {
+        background-color: white;
+        color: #D95D37;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
+    }
+
+    .news-content-title {
+        background-color: #D95D37;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 30px; 
+    }
+
+    .news-content-title p {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .playlist {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .playlist span {
+        font-weight: normal;
+    }
+
+    .playlist:not(:last-child) {
+        margin-bottom: 50px
+    }
+
+    .collection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .collection-1, .collection-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+    }
+
+    .collection-1 {
+        margin-right: 30px;
+    }
+
+    .collection-2 {
+        margin-left: 30px;
+    }
+
+    .collection-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .collection-title:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .collection-presentation {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .collection-img {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+
+    .food-list {
+        margin-bottom: 50px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .recipe {
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .recipe:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .recipe span, .food-list span {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 790px) {
+    .collection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .collection-1 {
+        margin-right: 0;
+    }
+
+    .collection-2 {
+        margin-left: 0;
+    }
+
+    .collection-1, .collection-2 {
+        width: 100%;
+    }
+
+    .days {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .day-1-content {
+        margin-right: 0;
+    }
+
+    .day-2-content {
+        margin-left: 0;
     }
 }
 /* ---------------------------------------- */

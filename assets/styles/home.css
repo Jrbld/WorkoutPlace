@@ -106,6 +106,7 @@ header {
     background-color: #212121;
     color: white;
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 /* ---------------------------------------- */
 
@@ -312,6 +313,7 @@ header {
         background-color: #212121;
         color: white;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
     }
 }
 /* ---------------------------------------- */
@@ -333,12 +335,14 @@ header {
 
 #space-card-1:hover, #space-card-2:hover, #space-card-3:hover {
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 
 #spaces-button:hover {
     background-color: #212121;
     color: white;
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 /* ---------------------------------------- */
 
@@ -491,6 +495,7 @@ header {
 
     #space-card-1:hover, #space-card-2:hover, #space-card-3:hover {
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
     }
 
     #space-card-1 a, #space-card-2 a, #space-card-3 a {
@@ -527,6 +532,7 @@ header {
         background-color: #212121;
         color: white;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
     }
 }
 
@@ -556,6 +562,7 @@ header {
     background-color: white;
     color: #D95D37;
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 /* ---------------------------------------- */
 
@@ -730,6 +737,7 @@ header {
         background-color: white;
         color: #D95D37;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
     }
 }
 
@@ -760,12 +768,14 @@ header {
 
 #news-card-1:hover, #news-card-2:hover, #news-card-3:hover {
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 
 #news-button:hover {
     background-color: #212121;
     color: white;
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
 }
 /* ---------------------------------------- */
 
@@ -919,6 +929,7 @@ header {
 
     #news-card-1:hover, #news-card-2:hover, #news-card-3:hover {
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
     }
 
     #news-card-1 a, #news-card-2 a, #news-card-3 a {
