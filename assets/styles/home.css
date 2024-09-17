@@ -48,7 +48,7 @@ header {
 /* ---------------------------------------- */
 /* "DESKTOP" HEADER */
 /* ---------------------------------------- */
-@media screen and (min-width: 500px) and (max-width: 1440px) {
+@media screen and (min-width: 500px) and (max-width: 3440px) {
     header {
         display: none;
     }
@@ -214,7 +214,7 @@ header {
 /* ---------------------------------------- */
 /* "DESKTOP" CHOOSE */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .choose {
         padding: 50px;
         display: flex;
@@ -447,7 +447,7 @@ header {
 /* ---------------------------------------- */
 /* "DESKTOP" SPACES */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .spaces {
         padding: 50px;
         display: flex;
@@ -657,7 +657,7 @@ header {
 /* ---------------------------------------- */
 /* "DESKTOP" COACH */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .coach {
         padding: 50px;
         display: flex;
@@ -874,9 +874,9 @@ header {
 
 
 /* ---------------------------------------- */
-/* "MOBILE" NEWS */
+/* "DESKTOP" NEWS */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .news {
         padding: 50px;
         display: flex;

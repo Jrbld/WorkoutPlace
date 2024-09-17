@@ -88,7 +88,7 @@
 /* ---------------------------------------- */
 /* "DESKTOP" BASIC LESSONS */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .basic-lessons {
         padding: 50px 50px 0 50px;
     }
@@ -239,7 +239,7 @@
 /* ---------------------------------------- */
 /* "DESKTOP" PREMIUM LESSONS */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .premium-lessons {
         padding: 50px;
     }
@@ -518,7 +518,7 @@ header {
 /* ---------------------------------------- */
 /* "DESKTOP" PAGE PAR COURS */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     header {
         height: 500px;
         background-size: cover;
