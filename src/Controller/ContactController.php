@@ -30,7 +30,8 @@ class ContactController extends AbstractController
 
             // Email
             $email = (new TemplatedEmail())
-                ->from($contact->getEmail())
+                // ->from($contact->getEmail())
+                ->from('contact.workoutplace@gmail.com')
                 ->to('contact.workoutplace@gmail.com')
                 ->subject($contact->getSubject())
                 ->htmlTemplate('mail/mail.twig')

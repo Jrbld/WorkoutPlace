@@ -76,7 +76,7 @@
 /* ---------------------------------------- */
 /* "DESKTOP" ABONNEMENTS */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .subscriptions {
         padding: 50px;
     }
@@ -286,7 +286,7 @@
 /* ---------------------------------------- */
 /* "DESKTOP" OFFRES */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .offers {
         padding: 50px;
     }
@@ -462,7 +462,7 @@
 /* ---------------------------------------- */
 /* "DESKTOP" ESSAI */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .try {
         width: 100%;
         height: 500px;
@@ -517,7 +517,7 @@
 /* ---------------------------------------- */
 /* "DESKTOP" LÉGENDE */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .legend {
         width: 100%;
         height: auto;

@@ -120,7 +120,7 @@
 /* ---------------------------------------- */
 /* "DESKTOP" NEWS */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     .news-intro {
         padding: 50px;
     }
@@ -480,7 +480,7 @@ header {
 /* ---------------------------------------- */
 /* "DESKTOP" PAGE PAR NEWS */
 /* ---------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 1440px) {
+@media screen and (min-width: 481px) and (max-width: 3440px) {
     header {
         height: 500px;
         background-size: cover;

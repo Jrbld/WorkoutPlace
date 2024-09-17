@@ -130,5 +130,197 @@ header {
     .contact-infos p:not(:last-child){
         margin-bottom: 25px;
     }
+
+    .email-form, .subject-form, .message-form {
+        margin-bottom: 30px;
+    }
+
+    .email-form input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 5px;
+    }
+
+    .subject-form input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 5px;
+    }
+
+    .message-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 5px;
+    }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" CONTACT */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 3440px) {
+    header {
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        color: white;
+        padding-top: 220px;
+    }
+
+    .contact {
+        padding: 50px;
+    }
+
+    .contact-intro {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .contact-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .contact-form {
+        width: 100%;
+        height: 480px;
+        padding: 50px;
+        background-color: #D95D37;
+        border-radius: 15px;
+        margin-bottom: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+        overflow: auto;
+
+        margin-right: 25px;
+    }
+
+    .button-form button {
+        background-color: white;
+        color: #D95D37;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .button-form button:hover {
+        background-color: #212121;
+        color: white;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
+    }
+
+    .contact-infos {
+        width: 100%;
+        height: 480px;
+        padding: 50px;
+        background-color: #212121;
+        border-radius: 15px;
+        margin-left: 25px;
+    }
+
+    .contact-infos h3 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        font-style: italic;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .contact-infos p {
+        text-align: left;
+        color: white;
+    }
+
+    .contact-infos p:not(:last-child){
+        margin-bottom: 50px;
+    }
+
+    .email-form, .subject-form, .message-form {
+        margin-bottom: 30px;
+    }
+
+    .email-form input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 5px;
+    }
+
+    .subject-form input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 5px;
+    }
+
+    .message-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 5px;
+    }
+
+    .alert {
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 873px) {
+    .contact-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-form {
+        margin-right: 0;
+    }
+
+    .contact-infos {
+        margin-left: 0;
+    }
 }
 /* ---------------------------------------- */
