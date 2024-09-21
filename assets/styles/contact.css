@@ -158,6 +158,12 @@ header {
         border: none;
         margin-top: 5px;
     }
+
+    .alert {
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
 }
 /* ---------------------------------------- */
 
