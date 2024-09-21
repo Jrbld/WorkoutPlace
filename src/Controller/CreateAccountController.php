@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class CreateAccountController extends AbstractController
 {
-    #[Route('/créer-un-compte', name: 'createAccount')]
+    #[Route('/create', name: 'createAccount')]
 
     public function index(Request $request): Response
     {

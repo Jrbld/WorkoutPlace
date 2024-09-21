@@ -1,0 +1,178 @@
+@import url('app.css');
+
+/* ---------------------------------------- */
+/* CRÉER UN COMPTE */
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* SECTION REGISTER */
+/* ---------------------------------------- */
+.register {
+  width: 100%;
+  margin-top: 100px;
+  height: auto;
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" REGISTER */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+  .register {
+    padding: 30px;
+  }
+
+  .register h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .register-form {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #D95D37;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+  }
+
+  .email-form, .password-form, .terms-form {
+    margin-bottom: 30px;
+  }
+
+  .email-form input, .password-form input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 5px;
+  }
+
+  .terms-form label {
+    margin-right: 10px;
+  }
+
+  .register-button {
+    background-color: white;
+    color: #D95D37;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .register-button:active {
+      background-color: #212121;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" REGISTER */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 3440px) {
+  .register {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .register h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 50px;
+  }
+
+  .register-form {
+      width: 50%;
+      height: auto;
+      padding: 50px;
+      background-color: #D95D37;
+      border-radius: 15px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: left;
+
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      color: white;
+  }
+
+  .email-form, .password-form, .terms-form {
+    margin-bottom: 30px;
+  }
+
+  .email-form input, .password-form input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 5px;
+  }
+
+  .terms-form label {
+    margin-right: 10px;
+  }
+
+  .register-button {
+      background-color: white;
+      color: #D95D37;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 30px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+  }
+
+  .register-button:hover {
+      background-color: #212121;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+}
+/* ---------------------------------------- */

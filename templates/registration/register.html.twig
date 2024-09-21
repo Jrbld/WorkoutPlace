@@ -1,23 +1,37 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('authenticator') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('authenticator') }}
+{% endblock %}
+
+{% block title %}WP | Créer un compte{% endblock %}
 
 {% block body %}
+
+<section class="register">
+
     {% for flash_error in app.flashes('verify_email_error') %}
         <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
     {% endfor %}
 
-    <h1>Register</h1>
+    <h1>CRÉER UN COMPTE</h1>
 
-    {{ form_errors(registrationForm) }}
+    <div class="register-form">
+        {{ form_errors(registrationForm) }}
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+        {{ form_start(registrationForm) }}
+            <div class="email-form">{{ form_row(registrationForm.email) }}</div>
+            <div class="password-form">{{ form_row(registrationForm.plainPassword) }}</div>
+            <div class="terms-form">{{ form_row(registrationForm.agreeTerms) }}</div>
 
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
+            <button type="submit" class="register-button">S'ENREGISTRER</button>
+        {{ form_end(registrationForm) }}
+    </div>
+
+</section>
+
 {% endblock %}

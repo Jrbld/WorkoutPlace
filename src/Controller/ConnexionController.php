@@ -8,14 +8,14 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ConnexionController extends AbstractController
 {
-    #[Route('/connexion', name: 'login', methods: ['GET', 'POST'])]
+    #[Route('/login', name: 'login', methods: ['GET', 'POST'])]
 
     public function login(): Response
     {
         return $this->render('connexion/connexion.twig');
     }
 
-    #[Route('/deconnexion', name: 'logout')]
+    #[Route('/logout', name: 'logout')]
 
     public function logout()
     {
