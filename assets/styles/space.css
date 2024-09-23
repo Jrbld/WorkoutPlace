@@ -36,7 +36,7 @@
         text-align: center;
     }
 
-    .spaces {
+    .espaces {
         width: 100%;
         height: auto;
     }
@@ -99,7 +99,7 @@
         text-align: center;
     }
 
-    .spaces {
+    .espaces {
         width: 100%;
         height: auto;
     }
@@ -149,7 +149,7 @@
 /* ---------------------------------------- */
 /* PAGE PAR ESPACE */
 /* ---------------------------------------- */
-header {
+.space-header {
     width: 100%;
     margin-top: 100px;
 }
@@ -176,7 +176,7 @@ header {
 /* "MOBILE" PAGE PAR ESPACE */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
-    header {
+    .space-header {
         height: 250px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -188,20 +188,19 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        padding-top: 80px;
     }
 
-    .header-title p {
+    .header-title-p {
         font-family: 'Oswald', sans-serif;
         font-size: 32px;
         font-weight: bold;
         font-style: italic;
         text-align: center;
         color: white;
+        padding-top: 80px;
     }
 
-    .header-title img {
+    .header-title-img {
         width: 40px;
     }
 
@@ -321,7 +320,7 @@ header {
 /* "DESKTOP" PAGE PAR ESPACE */
 /* ---------------------------------------- */
 @media screen and (min-width: 481px) and (max-width: 3440px) {
-    header {
+    .space-header {
         height: 500px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -333,20 +332,19 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        padding-top: 190px;
     }
 
-    .header-title p {
+    .header-title-p {
         font-family: 'Oswald', sans-serif;
         font-size: 40px;
         font-weight: bold;
         font-style: italic;
         text-align: center;
         color: white;
+        padding-top: 190px;
     }
 
-    .header-title img {
+    .header-title-img {
         width: 50px;
     }
 

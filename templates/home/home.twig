@@ -12,7 +12,7 @@
 
 {% block body %}
 
-<header style="background-image: url('{{ asset('build/images/home-header.jpg') }}');"></header>
+<header class="home-header" style="background-image: url('{{ asset('build/images/home-header.jpg') }}');"></header>
 
 <div class="desktop-header" style="background-image: url('{{ asset('build/images/header.jpg') }}');">
     <p><img src="{{ asset('build/images/WP-light-complete-logo.png') }}" alt="Logo WP"></p>
@@ -67,8 +67,8 @@
 </section>
 
 <section class="spaces">
-    <h1>DES ESPACES POUR TOUS</h1>
-    <p>
+    <h1 class="spaces-title">DES ESPACES POUR TOUS</h1>
+    <p class="spaces-text">
         Notre salle comporte de nombreux espaces adaptés
         à tous vos besoins et à tous les sports
         que vous souhaitez pratiquer.
@@ -88,7 +88,7 @@
     <a id="spaces-button" href="{{ url('space') }}">TOUS NOS ESPACES</a>
 </section>
 
-<section class="coach">
+<section class="staff">
     <h1>DES COACHS DIPLOMÉS</h1>
     <p id="coach-presentation">
         Notre équipe est composée de 6 coachs diplomés
@@ -132,7 +132,7 @@
     <a id="coach-button" href="{{ url('lesson') }}">NOS DIFFÉRENTS COURS</a>
 </section>
 
-<section class="news">
+<section class="news-part">
     <h1>SUIVEZ NOS ACTUALITÉS !</h1>
     <p id="news-presentation">
         Sur notre site, vous trouverez de nombreux contenus

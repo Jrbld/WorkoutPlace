@@ -10,7 +10,7 @@
 /* ---------------------------------------- */
 /* HEADER */
 /* ---------------------------------------- */
-header {
+.home-header {
     width: 100%;
     margin-top: 100px;
     background-size: cover;
@@ -26,7 +26,7 @@ header {
 /* "MOBILE" HEADER */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
-    header {
+    .home-header {
         height: 250px;
     }
 
@@ -49,7 +49,7 @@ header {
 /* "DESKTOP" HEADER */
 /* ---------------------------------------- */
 @media screen and (min-width: 500px) and (max-width: 3440px) {
-    header {
+    .home-header {
         display: none;
     }
 
@@ -329,7 +329,11 @@ header {
     background-color: #D95D37;
 }
 
-.spaces h1, p {
+.spaces-title {
+    color: white;
+}
+
+.spaces-text {
     color: white;
 }
 
@@ -361,7 +365,7 @@ header {
         align-items: center;
     }
 
-    .spaces h1 {
+    .spaces-title {
         font-family: 'Oswald', sans-serif;
         font-size: 32px;
         font-weight: bold;
@@ -370,7 +374,7 @@ header {
         margin-bottom: 30px;
     }
 
-    .spaces p {
+    .spaces-text {
         text-align: center;
         margin-bottom: 30px;
     }
@@ -456,7 +460,7 @@ header {
         align-items: center;
     }
 
-    .spaces h1 {
+    .spaces-title {
         font-family: 'Oswald', sans-serif;
         font-size: 40px;
         font-weight: bold;
@@ -465,7 +469,7 @@ header {
         margin-bottom: 30px;
     }
 
-    .spaces p {
+    .spaces-text {
         text-align: center;
         margin-bottom: 50px;
     }
@@ -553,7 +557,7 @@ header {
 /* ---------------------------------------- */
 /* SECTION COACH */
 /* ---------------------------------------- */
-.coach {
+.staff {
     width: 100%;
     background-color: #212121;
 }
@@ -573,7 +577,7 @@ header {
 /* "MOBILE" COACH */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
-    .coach {
+    .staff {
         padding: 30px;
         display: flex;
         flex-direction: column;
@@ -581,7 +585,7 @@ header {
         align-items: center;
     }
 
-    .coach h1 {
+    .staff h1 {
         font-family: 'Oswald', sans-serif;
         font-size: 32px;
         font-weight: bold;
@@ -628,6 +632,7 @@ header {
 
     #pilates p, #body p, #hiit p {
         margin-bottom: 30px;
+        color: white;
     }
 
     #coach-button {
@@ -658,7 +663,7 @@ header {
 /* "DESKTOP" COACH */
 /* ---------------------------------------- */
 @media screen and (min-width: 481px) and (max-width: 3440px) {
-    .coach {
+    .staff {
         padding: 50px;
         display: flex;
         flex-direction: column;
@@ -666,7 +671,7 @@ header {
         align-items: center;
     }
 
-    .coach h1 {
+    .staff h1 {
         font-family: 'Oswald', sans-serif;
         font-size: 40px;
         font-weight: bold;
@@ -720,6 +725,10 @@ header {
         margin: 5px 0;
     }
 
+    #pilates p, #body p, #hiit p {
+        color: white;
+    }
+
     #coach-button {
         text-decoration: none;
         background-color: #D95D37;
@@ -762,7 +771,7 @@ header {
 /* ---------------------------------------- */
 /* SECTION NEWS */
 /* ---------------------------------------- */
-.news {
+.news-part {
     width: 100%;
 }
 
@@ -786,11 +795,11 @@ header {
 /* "MOBILE" NEWS */
 /* ---------------------------------------- */
 @media screen and (min-width: 340px) and (max-width: 480px) {
-    .news {
+    .news-part {
         padding: 30px;
     }
     
-    .news h1 {
+    .news-part h1 {
         font-family: 'Oswald', sans-serif;
         font-size: 32px;
         font-weight: bold;
@@ -886,7 +895,7 @@ header {
 /* "DESKTOP" NEWS */
 /* ---------------------------------------- */
 @media screen and (min-width: 481px) and (max-width: 3440px) {
-    .news {
+    .news-part {
         padding: 50px;
         display: flex;
         flex-direction: column;
@@ -894,7 +903,7 @@ header {
         align-items: center;
     }
 
-    .news h1 {
+    .news-part h1 {
         font-family: 'Oswald', sans-serif;
         font-size: 40px;
         font-weight: bold;
