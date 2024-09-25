@@ -111,6 +111,14 @@
         align-items: center;
     }
 
+    #subscription-1:hover, #subscription-2:hover, #subscription-3:hover {
+        background-color: #D95D37;
+    }
+
+    #subscription-1:hover .orange-title, #subscription-2:hover .orange-title, #subscription-3:hover .orange-title {
+        color: #212121;
+    }
+
     #subscription-2 {
         margin: 0 30px;
     }
@@ -465,7 +473,7 @@
 @media screen and (min-width: 481px) and (max-width: 3440px) {
     .try {
         width: 100%;
-        height: 500px;
+        height: 350px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -474,7 +482,7 @@
     #try-text {
         text-align: center;
         color: white;
-        padding-top: 200px;
+        padding-top: 130px;
     }
 
     #try-title {
