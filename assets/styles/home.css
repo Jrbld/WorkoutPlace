@@ -616,13 +616,23 @@
         color: white;
     }
 
-    #coach-presentation {
-        text-align: center;
-        margin-bottom: 30px;
-        color: white;
+    .coachs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    #coach-photo {
+    .coach-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .coach-photo-1, .coach-photo-2, .coach-photo-3 {
         width: 100%;
         height: 200px;
         background-size: cover;
@@ -632,11 +642,11 @@
         margin-bottom: 30px;
     }
 
-    #pilates, #body, #hiit {
+    .coach-text {
         width: 100%;
     }
 
-    #pilates h2, #body h2, #hiit h2 {
+    .coach-text h2 {
         font-family: 'Oswald', sans-serif;
         font-size: 24px;
         font-weight: bold;
@@ -644,14 +654,14 @@
         color: white;
     }
 
-    #pilates span, #body span, #hiit span {
+    .coach-text span {
         border: 1px solid white;
         display: inline-block;
         width: 100%;
         margin: 5px 0;
     }
 
-    #pilates p, #body p, #hiit p {
+    .coach-text p {
         margin-bottom: 30px;
         color: white;
     }
@@ -698,40 +708,49 @@
         font-weight: bold;
         font-style: italic;
         text-align: center;
-        margin-bottom: 30px;
-        color: white;
-    }
-
-    #coach-presentation {
-        text-align: center;
         margin-bottom: 50px;
         color: white;
     }
 
-    #coach-photo {
-        width: 100%;
-        height: 250px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center 23%;
-        border-radius: 15px;
-        margin-bottom: 50px;
-    }
-
-    .lessons {
+    .coachs {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 50px;
     }
 
-    #pilates, #body {
+    .coach-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .coach-div:first-child {
         margin-right: 30px;
     }
 
-    #pilates h2, #body h2, #hiit h2 {
+    .coach-div:last-child {
+        margin-left: 30px;
+    }
+
+    .coach-photo-1, .coach-photo-2, .coach-photo-3 {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    .coach-text {
+        width: 100%;
+    }
+
+    .coach-text h2 {
         font-family: 'Oswald', sans-serif;
         font-size: 24px;
         font-weight: bold;
@@ -739,14 +758,15 @@
         color: white;
     }
 
-    #pilates span, #body span, #hiit span {
+    .coach-text span {
         border: 1px solid white;
         display: inline-block;
         width: 100%;
         margin: 5px 0;
     }
 
-    #pilates p, #body p, #hiit p {
+    .coach-text p {
+        margin-bottom: 50px;
         color: white;
     }
 
@@ -771,17 +791,25 @@
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 790px) {
-    .lessons {
+@media screen and (min-width: 481px) and (max-width: 920px) {
+    .coachs {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
     }
-    
-    #pilates, #body {
-        margin: 0 0 30px 0;
+
+    .coach-photo-1 {
+        background-position: center 20%;
+    }
+
+    .coach-div:first-child {
+        margin-right: 0;
+    }
+
+    .coach-div:last-child {
+        margin-left: 0;
     }
 }
 /* ---------------------------------------- */
