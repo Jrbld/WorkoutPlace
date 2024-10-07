@@ -32,6 +32,7 @@ Encore
     .addEntry('createAccount', './assets/createAccount.js')
     .addEntry('login', './assets/login.js')
     .addEntry('authenticator', './assets/authenticator.js')
+    .addEntry('adminSpace', './assets/admin.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

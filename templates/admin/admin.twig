@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('adminSpace') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('adminSpace') }}
+{% endblock %}
+
+{% block title %}WP | Admin{% endblock %}
+
+{% block body %}
+
+<header class="admin-header" style="background-image:url('{{ asset('build/images/admin-header.webp') }}')">
+  <p>ESPACE ADMINISTRATEUR</p>
+</header>
+
+<section class="admin">
+
+  <h1>BIENVENUE ADMINISTRATEUR</h1>
+
+  <div class="admin-buttons">
+      <a class="dashboard-button" href="{{ path('admin') }}">ACCÉDER AU TABLEAU DE BORD</a>
+      <a class="deco-button" href="{{ path('app_logout') }}">SE DÉCONNECTER</a>
+  </div>
+
+</section>
+
+{% endblock %}
