@@ -3,3 +3,251 @@
 /* ---------------------------------------- */
 /* MON COMPTE */
 /* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* GLOBAL */
+/* ---------------------------------------- */
+header {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.account {
+  width: 100%;
+  height: auto;
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" MON COMPTE */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+  header {
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  header p {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      color: white;
+      padding-top: 100px;
+  }
+
+  .account {
+      padding: 30px;
+  }
+
+  .account h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .account-buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .subscribe-button {
+      text-decoration: none;
+      background-color: #212121;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+  }
+
+  .subscribe-button:active {
+      background-color: #D95D37;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+
+  .password-button {
+    text-decoration: none;
+    background-color: #D95D37;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.password-button:active {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+  .deco-button {
+      text-decoration: none;
+      background-color: #212121;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 30px;
+      border-radius: 10px;
+  }
+
+  .deco-button:active {
+      background-color: #D95D37;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" MON COMPTE */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 3440px) {
+  header {
+      height: 500px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  header p {
+      font-family: 'Oswald', sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      color: white;
+      padding-top: 220px;
+  }
+
+  .account {
+      padding: 50px;
+  }
+
+  .account h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 50px;
+  }
+
+  .account-buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .password-button {
+      text-decoration: none;
+      background-color: #D95D37;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 30px;
+      border-radius: 10px;
+      margin-right: 25px;
+      margin-left: 25px;
+  }
+
+  .password-button:hover {
+      background-color: #212121;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+
+  .subscribe-button, .deco-button {
+      text-decoration: none;
+      background-color: #212121;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 30px;
+      border-radius: 10px;
+  }
+
+  .subscribe-button {
+    margin-right: 25px;
+  }
+
+  .deco-button {
+    margin-left: 25px;
+  }
+
+  .subscribe-button:hover, .deco-button:hover {
+      background-color: #D95D37;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 974px) {
+  .account-buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .subscribe-button {
+      margin-right: 0;
+      margin-bottom: 50px;
+  }
+
+  .password-button {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 50px;
+  }
+
+  .deco-button {
+    margin-left: 0;
+  }
+}
+/* ---------------------------------------- */
