@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('choose_subscription') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('choose_subscription') }}
+{% endblock %}
+
+{% block title %}WP | Choisir un abonnement{% endblock %}
+
+{% block body %}
+
+<section class="choose_subscription">
+
+    <h1>CHOISISSEZ UN ABONNEMENT</h1>
+
+    <div class="subscriptions-buttons">
+
+        <form method="POST" action="{{ path('app_choose_subscription', {'id': 1}) }}">
+            <button class="classic-button" type="submit">CLASSIC</button>
+        </form>
+        
+        <form method="POST" action="{{ path('app_choose_subscription', {'id': 2}) }}">
+            <button class="max-button" type="submit">MAX</button>
+        </form>
+        
+        <form method="POST" action="{{ path('app_choose_subscription', {'id': 3}) }}">
+            <button class="ultra-button" type="submit">ULTRA</button>
+        </form>
+        
+
+    </div>
+
+</section>
+
+{% endblock %}

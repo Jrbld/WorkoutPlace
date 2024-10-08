@@ -17,8 +17,13 @@ class Subscription
     #[ORM\Column(length: 50)]
     private ?string $name = null;
 
+    /*
     #[ORM\Column(type: Types::TEXT)]
     private ?string $description = null;
+    */
+
+    #[ORM\Column(nullable: true)]
+    private ?int $units_count = null;
 
     public function getId(): ?int
     {
@@ -37,6 +42,7 @@ class Subscription
         return $this;
     }
 
+    /*
     public function getDescription(): ?string
     {
         return $this->description;
@@ -45,6 +51,19 @@ class Subscription
     public function setDescription(string $description): static
     {
         $this->description = $description;
+
+        return $this;
+    }
+    */
+
+    public function getUnitsCount(): ?int
+    {
+        return $this->units_count;
+    }
+
+    public function setUnitsCount(?int $units_count): static
+    {
+        $this->units_count = $units_count;
 
         return $this;
     }

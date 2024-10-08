@@ -1,0 +1,137 @@
+@import url('app.css');
+
+/* ---------------------------------------- */
+/* CHOISIR UN ABONNEMENT */
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* GLOBAL */
+/* ---------------------------------------- */
+.choose_subscription {
+  margin-top : 100px;
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "MOBILE" CHOISIR UN ABONNEMENT */
+/* ---------------------------------------- */
+@media screen and (min-width: 340px) and (max-width: 480px) {
+  .choose_subscription {
+      padding: 30px;
+  }
+
+  .choose_subscription h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .subscriptions-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.classic-button, .max-button {
+  margin-bottom: 30px;
+}
+
+.classic-button, .max-button, .ultra-button {
+    text-decoration: none;
+    background-color: #D95D37;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.classic-button:active, .max-button:active, .ultra-button:active {
+    background-color: #212121;
+    color: white;
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+}
+/* ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- */
+/* "DESKTOP" CHOISIR UN ABONNEMENT */
+/* ---------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 3440px) {
+  .choose_subscription {
+      padding: 50px;
+  }
+
+  .choose_subscription h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 50px;
+  }
+
+  .subscriptions-buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .classic-button {
+    margin-right: 25px;
+  }
+
+  .max-button {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .ultra-button {
+    margin-left: 25px;
+  }
+
+  .classic-button, .max-button, .ultra-button {
+      text-decoration: none;
+      background-color: #D95D37;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 30px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+  }
+
+  .classic-button:hover, .max-button:hover, .ultra-button:hover {
+      background-color: #212121;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+}
+  /* ---------------------------------------- */
