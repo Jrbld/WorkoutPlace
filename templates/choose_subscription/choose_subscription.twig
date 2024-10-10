@@ -18,18 +18,9 @@
 
     <div class="subscriptions-buttons">
 
-        <form method="POST" action="{{ path('app_choose_subscription', {'id': 1}) }}">
-            <button class="classic-button" type="submit">CLASSIC</button>
-        </form>
-        
-        <form method="POST" action="{{ path('app_choose_subscription', {'id': 2}) }}">
-            <button class="max-button" type="submit">MAX</button>
-        </form>
-        
-        <form method="POST" action="{{ path('app_choose_subscription', {'id': 3}) }}">
-            <button class="ultra-button" type="submit">ULTRA</button>
-        </form>
-        
+        <a href="{{ path('app_choose_subscription')}}" class="classic-button">CLASSIC</a>
+        <a href="{{ path('app_choose_subscription')}}" class="max-button">MAX</a>
+        <a href="{{ path('app_choose_subscription')}}" class="ultra-button">ULTRA</a>
 
     </div>
 
