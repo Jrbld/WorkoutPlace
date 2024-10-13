@@ -147,12 +147,26 @@ header {
       padding: 8px 16px;
       border-radius: 10px;
       border: none;
+      margin-top: 30px;
     }
 
     .connexion-form button:active {
       background-color: #212121;
       color: white;
       box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+
+    .request-password-link {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-style: none;
+      font-style: normal;
+    }
+  
+    .request-password-link:active {
+      color: #212121;
+      transition: 0.5s;
     }
 }
 /* ---------------------------------------- */
@@ -271,6 +285,7 @@ header {
       border-radius: 10px;
       border: none;
       cursor: pointer;
+      margin-top: 30px;
   }
 
   .connexion-form button:hover {
@@ -278,6 +293,19 @@ header {
       color: white;
       box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
       transition: 0.5s;
+  }
+
+  .request-password-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-style: none;
+    font-style: normal;
+  }
+
+  .request-password-link:hover {
+    color: #212121;
+    transition: 0.5s;
   }
 }
 /* ---------------------------------------- */

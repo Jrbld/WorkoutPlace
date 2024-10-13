@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app_forgot_password_request') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app_forgot_password_request') }}
+{% endblock %}
+
+{% block title %}WP | Mot de passe{% endblock %}
+
+{% block body %}
+
+<section class="check-email">
+
+    <p>
+        Si votre adresse mail correspond à un compte existant, un lien vous permettant de réinitialiser votre mot de passe vient de vous être envoyé.
+        <br>
+        Ce lien expirera dans {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
+    </p>
+    <br>
+    <p>Si vous n'avez pas reçu de mail, vérifiez vos spams ou <a href="{{ path('app_forgot_password_request') }}">réessayez</a>.</p>
+
+</section>
+
+{% endblock %}
