@@ -34,6 +34,7 @@ Encore
     .addEntry('authenticator', './assets/authenticator.js')
     .addEntry('adminSpace', './assets/admin.js')
     .addEntry('choose_subscription', './assets/choose_subscription.js')
+    .addEntry('app_forgot_password_request', './assets/forgot_password.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

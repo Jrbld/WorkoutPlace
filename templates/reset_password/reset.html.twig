@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app_forgot_password_request') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app_forgot_password_request') }}
+{% endblock %}
+
+{% block title %}WP | Mot de passe{% endblock %}
+
+{% block body %}
+
+<section class="reset">
+
+    <h1>RÉINITIALISER VOTRE MOT DE PASSE</h1>
+
+    <div class="reset-form">
+        {{ form_start(resetForm) }}
+            <div class="password-form">{{ form_row(resetForm.plainPassword) }}</div>
+
+            <button type="submit" class="reset-button">RÉINITIALISER</button>
+        {{ form_end(resetForm) }}
+    </div>
+
+</section>
+
+{% endblock %}

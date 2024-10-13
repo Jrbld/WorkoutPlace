@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app_forgot_password_request') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app_forgot_password_request') }}
+{% endblock %}
+
+{% block title %}WP | Mot de passe{% endblock %}
+
+{% block body %}
+
+<section class="request">
+
+    <div class="request-error">
+        {% for flash_error in app.flashes('reset_password_error') %}
+            <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+        {% endfor %}
+    </div>
+
+    <h1>DEMANDE DE RÉINITIALISATION DE MOT DE PASSE</h1>
+
+    <div class="request-form">
+        {{ form_start(requestForm) }}
+            <div class="email-form">{{ form_row(requestForm.email) }}</div>
+            <p class="email-legend">
+                Veuillez renseigner votre adresse mail et
+                nous vous enverrons un lien pour réinitialiser votre mot de passe.
+            </p>
+
+            <button type="submit" class="request-button">RECEVOIR UN LIEN</button>
+        {{ form_end(requestForm) }}
+    </div>
+
+</section>
+
+{% endblock %}
