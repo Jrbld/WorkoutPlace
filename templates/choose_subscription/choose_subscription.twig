@@ -16,45 +16,51 @@
 
     <h1>CHOISISSEZ UN ABONNEMENT</h1>
 
-    <div class="subscriptions-buttons">
+    <div class="sub-content">
 
-        {{ subscription }}
+        {% if subscription %}
+            <div class="sub-saved">
+                <p>
+                    Vous avez choisi l'abonnement <span>{{ subscription }}</span>.
+                    <br>
+                    Merci de venir finaliser votre inscription au club.
+                </p>
+                <a class="sub-saved-button" href="{{ url('contact') }}">NOUS TROUVER</a>
+            </div>
 
-        <form action="{{ path('app_choose_subscription') }}" method="POST">
-            <div>
-                <input type="radio" id="basic" name="subscription_name" value="CLASSIC" required>
-                <label for="basic">CLASSIC</label>
+        {% else %}
+            <div class="sub-form">
+                <form action="{{ path('app_choose_subscription') }}" method="POST">
+                    <div class="sub-radio">
+                        <div class="sub-choice">
+                            <input type="radio" id="basic" name="subscription_name" value="CLASSIC" required>
+                            <label for="basic">CLASSIC</label>
+                        </div>
+                        
+                        <div class="sub-choice">
+                            <input type="radio" id="premium" name="subscription_name" value="MAX">
+                            <label for="premium">MAX</label>
+                        </div>
+                        
+                        <div class="sub-choice">
+                            <input type="radio" id="vip" name="subscription_name" value="ULTRA">
+                            <label for="vip">ULTRA</label>
+                        </div>
+                    </div>
+                    <button class="sub-submit-button" type="submit">S'ABONNER</button>
+                </form>
             </div>
-            
-            <div>
-                <input type="radio" id="premium" name="subscription_name" value="MAX">
-                <label for="premium">MAX</label>
-            </div>
-            
-            <div>
-                <input type="radio" id="vip" name="subscription_name" value="ULTRA">
-                <label for="vip">ULTRA</label>
-            </div>
-        
-            <button type="submit">S'abonner</button>
-        </form>
 
+        {% endif %}
+
+        {#
         {% for messages in { 'success': app.flashes('success'), 'error': app.flashes('error') } %}
             {% for message in messages %}
                 <div class="alert">
-                    {{ message }}
+                        {{ message }}
                 </div>
             {% endfor %}
         {% endfor %}
-        {#
-        <form action="{{ path('app_choose_subscription') }}" method="POST">
-            <input type="hidden" name="subscription_name" value="Nom de l'abonnement choisi">
-            <button type="submit">S'abonner</button>
-        </form>
-
-        <a href="{{ path('app_choose_subscription')}}" class="classic-button">CLASSIC</a>
-        <a href="{{ path('app_choose_subscription')}}" class="max-button">MAX</a>
-        <a href="{{ path('app_choose_subscription')}}" class="ultra-button">ULTRA</a>
         #}
 
     </div>
