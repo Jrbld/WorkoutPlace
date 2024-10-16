@@ -18,9 +18,44 @@
 
     <div class="subscriptions-buttons">
 
+        {{ subscription }}
+
+        <form action="{{ path('app_choose_subscription') }}" method="POST">
+            <div>
+                <input type="radio" id="basic" name="subscription_name" value="CLASSIC" required>
+                <label for="basic">CLASSIC</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="premium" name="subscription_name" value="MAX">
+                <label for="premium">MAX</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="vip" name="subscription_name" value="ULTRA">
+                <label for="vip">ULTRA</label>
+            </div>
+        
+            <button type="submit">S'abonner</button>
+        </form>
+
+        {% for messages in { 'success': app.flashes('success'), 'error': app.flashes('error') } %}
+            {% for message in messages %}
+                <div class="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        {#
+        <form action="{{ path('app_choose_subscription') }}" method="POST">
+            <input type="hidden" name="subscription_name" value="Nom de l'abonnement choisi">
+            <button type="submit">S'abonner</button>
+        </form>
+
         <a href="{{ path('app_choose_subscription')}}" class="classic-button">CLASSIC</a>
         <a href="{{ path('app_choose_subscription')}}" class="max-button">MAX</a>
         <a href="{{ path('app_choose_subscription')}}" class="ultra-button">ULTRA</a>
+        #}
 
     </div>
 
