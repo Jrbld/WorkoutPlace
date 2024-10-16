@@ -34,40 +34,6 @@
       text-align: center;
       margin-bottom: 30px;
   }
-
-  .subscriptions-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.classic-button, .max-button {
-  margin-bottom: 30px;
-}
-
-.classic-button, .max-button, .ultra-button {
-    text-decoration: none;
-    background-color: #D95D37;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    padding: 8px 16px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.classic-button:active, .max-button:active, .ultra-button:active {
-    background-color: #212121;
-    color: white;
-    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
-    transition: 0.5s;
-}
 }
 /* ---------------------------------------- */
 
@@ -91,28 +57,32 @@
       margin-bottom: 50px;
   }
 
-  .subscriptions-buttons {
+  .sub-content {
       width: 100%;
+      height: auto;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
   }
 
-  .classic-button {
-    margin-right: 25px;
+  .sub-saved {
+      font-family: 'Oswald', sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
   }
 
-  .max-button {
-    margin-left: 25px;
-    margin-right: 25px;
+  .sub-saved span {
+      color: #D95D37;
   }
 
-  .ultra-button {
-    margin-left: 25px;
+  .sub-saved p {
+    margin-bottom: 50px;
   }
 
-  .classic-button, .max-button, .ultra-button {
+  .sub-saved-button {
       text-decoration: none;
       background-color: #D95D37;
       color: white;
@@ -123,12 +93,76 @@
       text-align: center;
       padding: 10px 30px;
       border-radius: 10px;
-      border: none;
+  }
+
+  .sub-saved-button:hover {
+      background-color: #212121;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+
+  .sub-form form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .sub-radio {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+  }
+
+  .sub-choice {
+      background-color: #D95D37;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      padding: 10px 30px;
+      border-radius: 10px;
       cursor: pointer;
   }
 
-  .classic-button:hover, .max-button:hover, .ultra-button:hover {
+  .sub-choice:first-child {
+      margin-right: 50px;
+  }
+
+  .sub-choice:last-child {
+      margin-left: 50px;
+  }
+
+  .sub-choice:hover {
       background-color: #212121;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+
+  .sub-submit-button {
+    background-color: #212121;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .sub-submit-button:hover {
+      background-color: #D95D37;
       color: white;
       box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
       transition: 0.5s;

@@ -20,40 +20,34 @@ class ChooseSubscriptionController extends AbstractController
         $subscription = null;
 
         if ($user) {
+
             if ($request->isMethod('POST')) {
+
                 $currentSubscription = $user->getSubscriptionName();
+
                 if($currentSubscription){
-                    $this->addFlash('error', 'Vous avez déjà choisi un abonnement.');
+                    /* $this->addFlash('error', 'Vous avez déjà choisi un abonnement.'); */
                     return $this->redirectToRoute('app_choose_subscription');
                 }
             
-                $subscriptionName = $request->request->get('subscription_name'); // Récupérer la valeur du bouton radio sélectionné
+                $subscriptionName = $request->request->get('subscription_name');
     
                 if ($subscriptionName) {
-                    // Créer une nouvelle entité Subscription
                     $user->setSubscriptionName($subscriptionName);
-    
-                    // Sauvegarder dans la base de données
+
                     $entityManager->persist($user);
                     $entityManager->flush();
     
-                    // Rediriger ou retourner une réponse de succès
-                    $this->addFlash('success', 'Votre abonnement '.$subscriptionName.' a bien été pris en compte.');
+                    /* $this->addFlash('success', 'Votre abonnement '.$subscriptionName.' a bien été pris en compte.'); */
                     return $this->redirectToRoute('app_choose_subscription');
                 }
-            }else{
+                
+            } else {
                 $subscription = $user->getSubscriptionName();
             }
             
         }
 
-        
-        /* 
-        Récupérer user
-        
-        $subscription = user -> getSubscri
-
-        */
         return $this->render('choose_subscription/choose_subscription.twig', [
             'subscription' => $subscription
         ]);
