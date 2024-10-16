@@ -41,6 +41,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private bool $isVerified = false;
 
+    #[ORM\Column(length: 255)]
+    private ?string $subscriptionName = null;
+
     public function __construct()
     {
         $this->createdAt = new \DateTimeImmutable();
@@ -134,6 +137,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setVerified(bool $isVerified): static
     {
         $this->isVerified = $isVerified;
+
+        return $this;
+    }
+
+    public function getSubscriptionName(): ?string
+    {
+        return $this->subscriptionName;
+    }
+
+    public function setSubscriptionName(string $subscriptionName): static
+    {
+        $this->subscriptionName = $subscriptionName;
 
         return $this;
     }
