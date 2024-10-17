@@ -34,6 +34,117 @@
       text-align: center;
       margin-bottom: 30px;
   }
+
+  .sub-content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .sub-saved {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+  }
+
+  .sub-saved span {
+      color: #D95D37;
+  }
+
+  .sub-saved p {
+    margin-bottom: 30px;
+  }
+
+  .sub-saved-button {
+      text-decoration: none;
+      background-color: #D95D37;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      padding: 8px 16px;
+      border-radius: 10px;
+  }
+
+  .sub-saved-button:active {
+      background-color: #212121;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+
+  .sub-form form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .sub-radio {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+  }
+
+  .sub-choice {
+      background-color: #D95D37;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      padding: 8px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+
+  .sub-choice:first-child {
+      margin-bottom: 30px;
+  }
+
+  .sub-choice:last-child {
+      margin-top: 30px;
+  }
+
+  .sub-choice:active {
+      background-color: #212121;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
+
+  .sub-submit-button {
+    background-color: #212121;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .sub-submit-button:active {
+      background-color: #D95D37;
+      color: white;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
+      transition: 0.5s;
+  }
 }
 /* ---------------------------------------- */
 
