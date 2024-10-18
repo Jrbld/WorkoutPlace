@@ -32,20 +32,14 @@
             <div class="sub-form">
                 <form action="{{ path('app_choose_subscription') }}" method="POST">
                     <div class="sub-radio">
-                        <div class="sub-choice">
-                            <input type="radio" id="basic" name="subscription_name" value="CLASSIC" required>
-                            <label for="basic">CLASSIC</label>
-                        </div>
+                            <input type="radio" id="classic" name="subscription_name" value="CLASSIC" class="radio">
+                            <label class="label-1" for="classic">CLASSIC</label>
                         
-                        <div class="sub-choice">
-                            <input type="radio" id="premium" name="subscription_name" value="MAX">
-                            <label for="premium">MAX</label>
-                        </div>
+                            <input type="radio" id="max" name="subscription_name" value="MAX" class="radio">
+                            <label class="label-2" for="max">MAX</label>
                         
-                        <div class="sub-choice">
-                            <input type="radio" id="vip" name="subscription_name" value="ULTRA">
-                            <label for="vip">ULTRA</label>
-                        </div>
+                            <input type="radio" id="ultra" name="subscription_name" value="ULTRA" class="radio">
+                            <label class="label-3" for="ultra">ULTRA</label>
                     </div>
                     <button class="sub-submit-button" type="submit">S'ABONNER</button>
                 </form>

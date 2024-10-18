@@ -97,7 +97,11 @@
         margin-bottom: 30px;
     }
 
-    .sub-choice {
+    .radio {
+        display: none;
+    }
+
+    .label-1, .label-2, .label-3 {
         background-color: #D95D37;
         color: white;
         font-family: 'Oswald', sans-serif;
@@ -110,19 +114,25 @@
         cursor: pointer;
     }
 
-    .sub-choice:first-child {
+    .label-1 {
         margin-bottom: 30px;
     }
 
-    .sub-choice:last-child {
+    .label-3 {
         margin-top: 30px;
     }
 
-    .sub-choice:active {
+    .label-1:active, .label-2:active, .label-3:active {
         background-color: #212121;
         color: white;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
         transition: 0.5s;
+    }
+
+    #classic:checked ~ .label-1,
+    #max:checked ~ .label-2,
+    #ultra:checked ~ .label-3 {
+        background-color: #212121;
     }
 
     .sub-submit-button {
@@ -230,7 +240,11 @@
         margin-bottom: 30px;
     }
 
-    .sub-choice {
+    .radio {
+        display: none;
+    }
+
+    .label-1, .label-2, .label-3 {
         background-color: #D95D37;
         color: white;
         font-family: 'Oswald', sans-serif;
@@ -243,19 +257,25 @@
         cursor: pointer;
     }
 
-    .sub-choice:first-child {
+    .label-1 {
         margin-right: 50px;
     }
 
-    .sub-choice:last-child {
+    .label-3 {
         margin-left: 50px;
     }
 
-    .sub-choice:hover {
+    .label-1:hover, .label-2:hover, .label-3:hover {
         background-color: #212121;
         color: white;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.4);
         transition: 0.5s;
+    }
+
+    #classic:checked ~ .label-1,
+    #max:checked ~ .label-2,
+    #ultra:checked ~ .label-3 {
+        background-color: #212121;
     }
 
     .sub-submit-button {
